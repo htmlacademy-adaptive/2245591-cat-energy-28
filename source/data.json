@@ -1,0 +1,66 @@
+{
+	"projectName": "Cat Energy",
+	"pages": [
+		{
+			"path": "index.html",
+			"name": "Главная"
+		},
+		{
+			"path": "catalog.html",
+			"name": "Каталог"
+		},
+		{
+			"path": "form.html",
+			"name": "Форма"
+		}
+	],
+	"viewports": {
+		"desktop": 1280,
+		"tablet": 768,
+		"mobile": null
+	},
+	"images": {
+		"map": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 1220,
+					"height": 400
+				},
+				{
+					"viewport": "tablet",
+					"width": 768,
+					"height": 400
+				},
+				{
+					"viewport": "mobile",
+					"width": 320,
+					"height": 362
+				}
+			]
+		},
+		"test": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 1280,
+					"height": 1280
+				},
+				{
+					"viewport": "tablet",
+					"width": 640,
+					"height": 640
+				},
+				{
+					"viewport": "mobile",
+					"width": 320,
+					"height": 320
+				}
+			]
+		}
+	}
+}
