@@ -3,7 +3,81 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы формы
+<main class="main-form">
+	<h1 class="main-form__title">Подбор программы</h1>
+	<p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+	<form class="main-form__selection-form selection-form" action="https://echo.htmlacademy.ru/courses" method="get">
+		<label class="selection-form__label" for="name">
+			<span class="selection-form__label-name">Имя:*</span>
+			<input class="selection-form__input" type="text" id="name" placeholder="Барсик" required>
+		</label>
+		<label class="selection-form__label" for="weight">
+			<span class="selection-form__label-name">Вес (кг):*</span>
+			<input class="selection-form__input selection-form__input--weight" type="number" id="weight" placeholder="7" required>
+		</label>
+		<label class="selection-form__label" for="age">
+			<span class="selection-form__label-name">Возраст (лет):</span>
+			<input class="selection-form__input selection-form__input--age" type="number" id="age" placeholder="7">
+		</label>
+		<fieldset class="selection-form__program-type program-type">
+			<legend class="visually-hidden">Тип программы</legend>
+			<ul class="program-type__list">
+				<li class="program-type__item">
+					<label class="program-type__label" for="weight-loss">
+						<input class="program-type__input" type="radio" name="program-type" value="weight-loss" id="weight-loss" checked>
+						<span class="program-type__label-name">Похудение</span>
+					</label>
+				</li>
+				<li class="program-type__item">
+					<label class="program-type__label" for="weight-gain">
+						<input class="program-type__input" type="radio" name="program-type" value="weight-gain" id="weight-gain">
+						<span class="program-type__label-name">Набор массы</span>
+					</label>
+				</li>
+				<li class="program-type__item">
+					<label class="program-type__label" for="unknown">
+						<input class="program-type__input" type="radio" name="program-type" value="unknown" id="unknown">
+						<span class="program-type__label-name">Не знаю (Нужен ваш совет)</span>
+					</label>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset class="selection-form__owner-contacts owner-contacts">
+			<legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
+			<label class="owner-contacts__label" for="email">
+				<span class="owner-contacts__label-name">E-mail:*</span>
+				<input class="owner-contacts__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+			</label>
+			<label class="owner-contacts__label" for="phone">
+				<span class="owner-contacts__label-name">Телефон:*</span>
+				<input class="owner-contacts__input" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+			</label>
+		</fieldset>
+		<fieldset class="selection-form__form-comments form-comments">
+			<legend class="form-comments__title">Комментарий</legend>
+			<textarea class="form-comments__comments-area" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+		</fieldset>
+		<fieldset class="selection-form__additional-parameters additional-parameters">
+			<legend class="additional-parameters__title">Дополнительно</legend>
+			<label class="additional-parameters__label" for="sugar-substitute">
+				<input class="additional-parameters__input" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+				<span class="additional-parameters__label-name">Сахарозаменитель</span>
+			</label>
+			<label class="additional-parameters__label" for="water">
+				<input class="additional-parameters__input" type="checkbox" name="water" id="water">
+				<span class="additional-parameters__label-name">Питьевая вода</span>
+			</label>
+			<label class="additional-parameters__label" for="milk">
+				<input class="additional-parameters__input" type="checkbox" name="milk" id="milk">
+				<span class="additional-parameters__label-name">Молоко</span>
+			</label>
+			<label class="additional-parameters__label" for="vitamins">
+				<input class="additional-parameters__input" type="checkbox" name="vitamins" id="vitamins">
+				<span class="additional-parameters__label-name">Витамины</span>
+			</label>
+		</fieldset>
+		<button class="selection-form__button button" type="submit">Отправить заявку</button>
+		<span class="selection-form__warning">* — Обязательные поля</span>
+	</form>
 </main>
 {% endblock %}
