@@ -4,15 +4,17 @@
 
 {% block main %}
 <main class="main-form">
-	<h1 class="main-form__title heading-title">Подбор программы</h1>
+	<h1 class="main-form__title heading heading--lvl-1">Подбор программы</h1>
 	<p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 	<form class="main-form__selection-form selection-form" action="https://echo.htmlacademy.ru/courses" method="get">
 		<label class="selection-form__label" for="name">
-			<span class="selection-form__label-name label-name">Имя:*</span>
+			<span class="selection-form__label-name label-name">Имя:</span>
+			<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
 			<input class="selection-form__input input" type="text" id="name" placeholder="Барсик" required>
 		</label>
 		<label class="selection-form__label" for="weight">
-			<span class="selection-form__label-name label-name">Вес (кг):*</span>
+			<span class="selection-form__label-name label-name">Вес (кг):</span>
+			<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
 			<input class="selection-form__input selection-form__input--weight input" type="number" id="weight" placeholder="7" required>
 		</label>
 		<label class="selection-form__label" for="age">
@@ -43,41 +45,52 @@
 			</ul>
 		</fieldset>
 		<fieldset class="selection-form__owner-contacts owner-contacts">
-			<legend class="owner-contacts__title form-title">Контактные данные (владельца кота)</legend>
+			<legend class="heading heading--lvl-3">Контактные данные (владельца кота)</legend>
 			<label class="owner-contacts__label" for="email">
-				<span class="owner-contacts__label-name label-name">E-mail:*</span>
+				<span class="owner-contacts__label-name label-name">E-mail:</span>
+				<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
 				<input class="owner-contacts__input input input--email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
 			</label>
 			<label class="owner-contacts__label" for="phone">
-				<span class="owner-contacts__label-name label-name">Телефон:*</span>
+				<span class="owner-contacts__label-name label-name">Телефон:</span>
+				<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
 				<input class="owner-contacts__input input input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
 			</label>
 		</fieldset>
-		<fieldset class="selection-form__form-comments form-comments">
-			<legend class="form-comments__title form-title">Комментарий</legend>
-			<textarea class="form-comments__comments-area" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-		</fieldset>
+		<div class="selection-form__form-comments form-comments">
+			<label class="heading heading--lvl-3" for="comments">Комментарий</label>
+			<textarea class="form-comments__comments-area" name="comments" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+		</div>
 		<fieldset class="selection-form__additional-parameters additional-parameters">
-			<legend class="additional-parameters__title form-title">Дополнительно</legend>
+			<legend class="heading heading--lvl-3">Дополнительно</legend>
 			<label class="additional-parameters__label" for="sugar-substitute">
-				<input class="additional-parameters__input" type="checkbox" name="sugar-substitute" id="sugar-substitute" checked>
+				<input class="additional-parameters__input" type="checkbox" name="additional-parameters" value="sugar-substitute" id="sugar-substitute" checked>
 				<span class="additional-parameters__label-name label-name">Сахарозаменитель</span>
 			</label>
 			<label class="additional-parameters__label" for="water">
-				<input class="additional-parameters__input" type="checkbox" name="water" id="water">
+				<input class="additional-parameters__input" type="checkbox" name="additional-parameters" value="water" id="water">
 				<span class="additional-parameters__label-name label-name">Питьевая вода</span>
 			</label>
 			<label class="additional-parameters__label" for="milk">
-				<input class="additional-parameters__input" type="checkbox" name="milk" id="milk">
+				<input class="additional-parameters__input" type="checkbox" name="additional-parameters" value="milk" id="milk">
 				<span class="additional-parameters__label-name label-name">Молоко</span>
 			</label>
 			<label class="additional-parameters__label" for="vitamins">
-				<input class="additional-parameters__input" type="checkbox" name="vitamins" id="vitamins">
+				<input class="additional-parameters__input" type="checkbox" name="additional-parameters" value="vitamins" id="vitamins">
 				<span class="additional-parameters__label-name label-name">Витамины</span>
 			</label>
 		</fieldset>
 		<button class="selection-form__button button" type="submit">Отправить заявку</button>
-		<span class="selection-form__warning">* — Обязательные поля</span>
+		<span class="selection-form__warning" aria-hidden="true">* — Обязательные поля</span>
 	</form>
+	<section class="contacts">
+		<h2 class="visually-hidden">Почтовый адрес</h2>
+		<p class="contacts__invitation">Приглашаем к сотрудничеству дилеров</p>
+		<address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+	</section>
+	<section class="map">
+		<h2 class="visually-hidden">Схема проезда</h2>
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e69f4e96c443d45cbe1a9d13eccc646da4c76ccd5fd76d18db368992ff36aad&amp;source=constructor" width="320" height="362"></iframe>
+	</section>
 </main>
 {% endblock %}
