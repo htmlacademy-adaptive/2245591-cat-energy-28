@@ -60,6 +60,6 @@
 	"type": "module",
 	"pre-commit": "lint",
 	"volta": {
-		"node": "16.19.1"
+		"node": "16.20.0"
 	}
 }
