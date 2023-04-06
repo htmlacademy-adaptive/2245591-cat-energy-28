@@ -1,0 +1,29 @@
+.welcome {
+	background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), url("/img/background-cat-no-color.png") no-repeat;
+	// background-color: rgb(104 183 56 / 0.85);
+	// background-image: url("/img/background-cat.png");
+	// background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+	padding-top: 27px;
+
+	&__main-title {
+		margin-bottom: 25px;
+	}
+
+	&__main-description {
+		margin: 0;
+		margin-bottom: 29px;
+		font-family: var(--accent-font);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 14px;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+
+	&__welcome-image {
+		margin-bottom: 3px;
+	}
+}

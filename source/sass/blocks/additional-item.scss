@@ -1,0 +1,9 @@
+.additional-item {
+	&__name {
+		font-family: var(--accent-font);
+		font-size: 16px;
+		line-height: 16px;
+		text-transform: uppercase;
+		color: #222222;
+	}
+}

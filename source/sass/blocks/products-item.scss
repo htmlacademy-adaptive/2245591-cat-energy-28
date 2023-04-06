@@ -1,0 +1,34 @@
+.products-item {
+	&__name {
+		font-family: var(--accent-font);
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #222222;
+	}
+
+	&__parameter {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__value {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__button {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	&__show-more-description {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	&__show-all-button {
+		background: #f2f2f2;
+		color: #444444;
+	}
+}

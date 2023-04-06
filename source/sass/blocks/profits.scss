@@ -1,0 +1,27 @@
+.profits__title {
+	font-size: 12px;
+	line-height: 12px;
+
+	&--expenses {
+		display: inline;
+		font-family: var(--accent-font);
+		font-size: 14px;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+}
+
+.profits__profit-level {
+	font-family: var(--accent-font);
+	font-size: 24px;
+	line-height: 24px;
+
+	&--expenses {
+		display: inline;
+		font-family: var(--accent-font);
+		font-size: 14px;
+		line-height: 20px;
+		text-transform: uppercase;
+		margin-left: 0;
+	}
+}
