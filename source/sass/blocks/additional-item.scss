@@ -5,5 +5,14 @@
 		line-height: 16px;
 		text-transform: uppercase;
 		color: #222222;
+		margin: 0;
+	}
+
+	&__quantity {
+		line-height: 14px;
+	}
+
+	&__price {
+		line-height: 14px;
 	}
 }

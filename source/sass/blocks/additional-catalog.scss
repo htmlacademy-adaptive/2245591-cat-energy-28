@@ -1,3 +1,7 @@
 .additional-catalog {
-	//
+	&__special-offer {
+		background: linear-gradient(rgb(104 183 56 / 0.85), rgb(104 183 56 / 0.85)), url("/img/background-catalog-cat-no-color.png") no-repeat;
+		background-size: contain;
+		padding: 186px 60px 43px 60px;
+	}
 }

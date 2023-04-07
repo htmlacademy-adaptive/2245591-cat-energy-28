@@ -1,8 +1,6 @@
 .programs {
 	&__programs-list {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
+		@include list-style;
 	}
 
 	&__programs-item {
