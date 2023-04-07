@@ -1,7 +1,9 @@
 .program-type {
 	border: none;
+}
 
-	&__list {
-		@include list-style;
-	}
+.program-type__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }

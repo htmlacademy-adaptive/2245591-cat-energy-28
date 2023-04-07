@@ -1,5 +1,9 @@
-.advantages {
-	&__advantages-list {
-		@include list-style;
-	}
+.advantages__title {
+	margin: 0;
+}
+
+.advantages__advantages-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }

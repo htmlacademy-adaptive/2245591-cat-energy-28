@@ -1,18 +1,16 @@
-.additional-item {
-	&__name {
-		font-family: var(--accent-font);
-		font-size: 16px;
-		line-height: 16px;
-		text-transform: uppercase;
-		color: #222222;
-		margin: 0;
-	}
+.additional-item__name {
+	font-family: var(--accent-font);
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	color: #222222;
+	margin: 0;
+}
 
-	&__quantity {
-		line-height: 14px;
-	}
+.additional-item__quantity {
+	line-height: 14px;
+}
 
-	&__price {
-		line-height: 14px;
-	}
+.additional-item__price {
+	line-height: 14px;
 }

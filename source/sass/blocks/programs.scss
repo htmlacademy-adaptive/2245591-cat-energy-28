@@ -1,36 +1,36 @@
-.programs {
-	&__programs-list {
-		@include list-style;
-	}
+.programs__programs-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
-	&__programs-item {
-		background-color: #f2f2f2;
-		margin-bottom: 20px;
-	}
+.programs__programs-item {
+	background-color: #f2f2f2;
+	margin-bottom: 20px;
+}
 
-	&__programs-title {
-		font-family: var(--accent-font);
-		font-style: normal;
-		font-weight: 400;
-		font-size: 24px;
-		line-height: 37px;
-		text-transform: uppercase;
-		color: #000000;
-		margin: 0;
-	}
+.programs__programs-title {
+	font-family: var(--accent-font);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #000000;
+	margin: 0;
+}
 
-	&__programs-description {
-		margin: 0;
-	}
+.programs__programs-description {
+	margin: 0;
+}
 
-	&__programs-link {
-		font-family: var(--accent-font);
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 16px;
-		text-transform: uppercase;
-		text-decoration: none;
-		color: #000000;
-	}
+.programs__programs-link {
+	font-family: var(--accent-font);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
 }

@@ -1,17 +1,16 @@
 .main-form {
 	background: #ffffff;
-	padding-top: 27px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 27px 20px 0 20px;
+}
 
-	&__description {
-		font-family: var(--accent-font);
-		text-transform: uppercase;
-		color: #000000;
-		margin-bottom: 39px;
-	}
+.main-form__description {
+	font-family: var(--accent-font);
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 39px;
+}
 
-	&__title {
-		margin-bottom: 37px;
-	}
+.main-form__title {
+	margin: 0;
+	margin-bottom: 37px;
 }

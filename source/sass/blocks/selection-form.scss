@@ -1,33 +1,34 @@
-.selection-form {
-	&__program-type {
-		margin: 0;
-		padding: 0;
-		margin-top: 46px;
-		margin-bottom: 45px;
-	}
+.selection-form__title {
+	margin: 0;
+	margin-bottom: 46px;
+}
 
-	&__owner-contacts {
-		margin: 0;
-		padding: 0;
-		margin-bottom: 23px;
-		border: none;
-	}
+.selection-form__program-type {
+	padding: 0;
+	margin-bottom: 45px;
+}
 
-	&__additional-parameters {
-		margin: 0;
-		padding: 0;
-		margin-bottom: 21px;
-		border: none;
-	}
+.selection-form__owner-contacts {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 23px;
+	border: none;
+}
 
-	&__warning {
-		line-height: 16px;
-		color: #000000;
-		margin-bottom: 32px;
-	}
+.selection-form__additional-parameters {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 21px;
+	border: none;
+}
 
-	&__button {
-		border: none;
-		margin-bottom: 21px;
-	}
+.selection-form__warning {
+	line-height: 16px;
+	color: #000000;
+	margin-bottom: 32px;
+}
+
+.selection-form__button {
+	border: none;
+	margin-bottom: 21px;
 }

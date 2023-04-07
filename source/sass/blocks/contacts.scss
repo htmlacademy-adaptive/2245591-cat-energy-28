@@ -1,15 +1,12 @@
+.contacts__invitation {
+	font-family: var(--accent-font);
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #111111;
+}
 
-.contacts {
-	&__invitation {
-		font-family: var(--accent-font);
-		font-size: 16px;
-		line-height: 20px;
-		text-transform: uppercase;
-		color: #111111;
-	}
-
-	&__adress {
-		font-style: normal;
-		line-height: 20px;
-	}
+.contacts__adress {
+	font-style: normal;
+	line-height: 20px;
 }
