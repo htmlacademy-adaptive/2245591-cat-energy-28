@@ -4,13 +4,30 @@
 			rgb(104 183 56 / 0.85),
 			rgb(104 183 56 / 0.85)
 		),
-		url("/img/background-cat-no-color.png") no-repeat;
-	background-size: contain;
+		url("/img/background-cat-mobile@1x.png") no-repeat;
+	background-size: 100% auto;
 	text-align: center;
 	padding-top: 27px;
+	color: #ffffff;
+
+	@media (min-resolution: 2dppx) {
+		background:
+			linear-gradient(
+				rgb(104 183 56 / 0.85),
+				rgb(104 183 56 / 0.85)
+			),
+			url("/img/background-cat-mobile@2x.png") no-repeat;
+		background-size: 100% auto;
+	}
+
+	@media (min-width: 768px) {
+		background: #ffffff;
+		color: #000000;
+	}
 }
 
 .welcome__main-title {
+	color: inherit;
 	margin: 0;
 	margin-bottom: 25px;
 }
@@ -24,7 +41,7 @@
 	font-size: 14px;
 	line-height: 14px;
 	text-transform: uppercase;
-	color: #ffffff;
+	color: inherit;
 }
 
 .welcome__welcome-image {
