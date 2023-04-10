@@ -8,20 +8,11 @@
 			rgb(104 183 56 / 0.85),
 			rgb(104 183 56 / 0.85)
 		),
-		url("/img/background-catalog-cat-mobile@1x.png") no-repeat;
+		var(--bg-image) no-repeat;
 	background-size: 100% auto;
-
-	@media (min-resolution: 2dppx) {
-		background:
-			linear-gradient(
-				rgb(104 183 56 / 0.85),
-				rgb(104 183 56 / 0.85)
-			),
-			url("/img/background-catalog-cat-mobile@2x.png") no-repeat;
-		background-size: 100% auto;
-	}
-
 	padding: 186px 60px 43px 60px;
+
+	@include bg-image("background-catalog-cat");
 }
 
 .additional-catalog__additional-list {
