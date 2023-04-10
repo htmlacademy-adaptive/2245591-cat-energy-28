@@ -7,7 +7,6 @@
 	<section class="main-index__welcome welcome">
 		<h1 class="welcome__main-title heading heading--lvl-1 heading--dark-background">Функциональное питание для котов</h1>
 		<p class="welcome__main-description">Занялся собой? Займись котом!</p>
-		{# <img class="welcome__welcome-image" src="/img/can-image.png" width="280" height="270" alt="Изображение банки с кормом."> #}
 		{% include "./templates/picture.twig" with {name: "can-image", class: "welcome__welcome-image", alt: "Изображение банки с кормом."} %}
 		<a class="welcome__choose-button button" href="#">Подобрать программу</a>
 	</section>
@@ -59,10 +58,8 @@
 			</div>
 		</dl>
 		<figure class="examples__compare-images compare-images">
-			{# <img class="compare-images__fat-cat" src="/img/cat-slider-fat.png" width="280" height="256" alt="Толстый кот."> #}
 			{% include "./templates/picture.twig" with {name: "cat-slider-fat", class: "compare-images__fat-cat", alt: "Толстый кот."} %}
 			<input class="compare-images__slider" type="range">
-			{# <img class="compare-images__fat-cat" src="/img/cat-slider-skinny.png" width="280" height="256" alt="Худой кот."> #}
 			{% include "./templates/picture.twig" with {name: "cat-slider-skinny", class: "compare-images__skinny-cat", alt: "Худой кот."} %}
 		</figure>
 	</section>
