@@ -7,3 +7,61 @@
 	margin: 0;
 	padding: 0;
 }
+
+.advantages__advantages-item {
+	&--leaf::before {
+		display: block;
+		content: "";
+		width: 60px;
+		height: 60px;
+		background: #68b738 url("../../icons/stack.svg#advantages-leaf") no-repeat center;
+		background-size: 30px 32px;
+
+		@media (min-width: 768px) {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	&--container::before {
+		display: block;
+		content: "";
+		width: 60px;
+		height: 60px;
+		background: #68b738 url("../../icons/stack.svg#advantages-container") no-repeat center;
+		background-size: 30px 32px;
+
+		@media (min-width: 768px) {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	&--tableware::before {
+		display: block;
+		content: "";
+		width: 60px;
+		height: 60px;
+		background: #68b738 url("../../icons/stack.svg#advantages-tableware") no-repeat center;
+		background-size: 30px 32px;
+
+		@media (min-width: 768px) {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	&--clock::before {
+		display: block;
+		content: "";
+		width: 60px;
+		height: 60px;
+		background: #68b738 url("../../icons/stack.svg#advantages-clock") no-repeat center;
+		background-size: 30px 32px;
+
+		@media (min-width: 768px) {
+			width: 80px;
+			height: 80px;
+		}
+	}
+}
