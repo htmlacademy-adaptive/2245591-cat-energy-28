@@ -1,17 +1,50 @@
 .footer {
 	background: #f2f2f2;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	@media #{$tablet-only} {
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 66px;
+		padding-bottom: 66px;
+	}
+}
+
+.footer__socials {
+	display: flex;
+	gap: 40px;
+	flex-direction: column;
+	align-items: center;
+
+	@media #{$not-mobile} {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
 .footer__academy-link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	color: var(--main-font);
 	font-size: 16px;
 	line-height: 19px;
 	text-decoration: none;
+	width: 100%;
+
+	@media #{$not-mobile} {
+		width: auto;
+		gap: 28px;
+	}
 }
 
 .footer__social-list {
+	display: flex;
+	gap: 24px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;

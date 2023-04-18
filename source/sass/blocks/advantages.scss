@@ -17,7 +17,7 @@
 		background: #68b738 url("../../icons/stack.svg#advantages-leaf") no-repeat center;
 		background-size: 30px 32px;
 
-		@media (min-width: 768px) {
+		@media #{$not-mobile} {
 			width: 80px;
 			height: 80px;
 		}
@@ -31,7 +31,7 @@
 		background: #68b738 url("../../icons/stack.svg#advantages-container") no-repeat center;
 		background-size: 30px 32px;
 
-		@media (min-width: 768px) {
+		@media #{$not-mobile} {
 			width: 80px;
 			height: 80px;
 		}
@@ -45,7 +45,7 @@
 		background: #68b738 url("../../icons/stack.svg#advantages-tableware") no-repeat center;
 		background-size: 30px 32px;
 
-		@media (min-width: 768px) {
+		@media #{$not-mobile} {
 			width: 80px;
 			height: 80px;
 		}
@@ -59,7 +59,7 @@
 		background: #68b738 url("../../icons/stack.svg#advantages-clock") no-repeat center;
 		background-size: 30px 32px;
 
-		@media (min-width: 768px) {
+		@media #{$not-mobile} {
 			width: 80px;
 			height: 80px;
 		}
