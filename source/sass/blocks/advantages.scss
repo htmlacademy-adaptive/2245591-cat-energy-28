@@ -17,7 +17,7 @@
 		row-gap: 37px;
 	}
 
-	@media #{desktop-only} {
+	@media #{$desktop-only} {
 		grid-template-rows: 1fr;
 		grid-template-columns: repeat(4, 1fr);
 	}
