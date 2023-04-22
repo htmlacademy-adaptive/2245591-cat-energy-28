@@ -1,5 +1,18 @@
 .navigation__list {
+	display: none;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+
+	@media #{$not-mobile} {
+		display: flex;
+		justify-content: end;
+		gap: 34px;
+	}
+}
+
+.navigation__toggle {
+	@media #{$not-mobile} {
+		display: none;
+	}
 }

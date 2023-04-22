@@ -1,15 +1,80 @@
 .programs__programs-list {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 20px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+
+	@media #{$tablet-only} {
+		gap: 30px;
+	}
+
+	@media #{$desktop-only} {
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+		gap: 80px;
+	}
 }
 
 .programs__programs-item {
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	grid-template-columns: 78px auto;
 	background-color: #f2f2f2;
-	margin-bottom: 20px;
+	padding: 18px 20px;
+
+	@media #{$tablet-only} {
+		grid-template-columns: auto 268px;
+		padding: 77px 28px 53px 53px;
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: 181px auto;
+		padding: 41px 61px 55px 55px;
+	}
+
+	&--weight-loss::before {
+		display: block;
+		content: "";
+		width: 67px;
+		height: 67px;
+		background: url("../../icons/stack.svg#weight-loss") no-repeat center;
+
+		@media #{$tablet-only} {
+			grid-row: 1 / 4;
+			width: 268px;
+			height: 268px;
+		}
+
+		@media #{$desktop-only} {
+			width: 134px;
+			height: 134px;
+		}
+	}
+
+	&--weight-gain::before {
+		display: block;
+		content: "";
+		width: 67px;
+		height: 67px;
+		background: url("../../icons/stack.svg#weight-gain") no-repeat center;
+
+		@media #{$tablet-only} {
+			grid-row: 1 / 4;
+			width: 268px;
+			height: 268px;
+		}
+
+		@media #{$desktop-only} {
+			width: 134px;
+			height: 134px;
+		}
+	}
 }
 
 .programs__programs-title {
+	align-self: center;
 	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
@@ -18,13 +83,35 @@
 	text-transform: uppercase;
 	color: #000000;
 	margin: 0;
+
+	@media #{$not-mobile} {
+		font-size: 36px;
+		line-height: 36px;
+	}
+
+	@media #{$tablet-only} {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
 }
 
 .programs__programs-description {
+	grid-column: 1 / 3;
 	margin: 0;
+
+	@media #{$not-mobile} {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	@media #{$tablet-only} {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+	}
 }
 
 .programs__programs-link {
+	grid-column: 1 / 3;
 	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 400;
@@ -33,4 +120,14 @@
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #000000;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	@media #{$tablet-only} {
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+	}
 }

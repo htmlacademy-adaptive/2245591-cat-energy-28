@@ -1,5 +1,7 @@
 .header {
 	background: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 17px;
 }
 
 .logos {
@@ -12,4 +14,14 @@
 
 .logo-text {
 	object-fit: cover;
+}
+
+.header__centerer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+
+	@media #{$not-mobile} {
+		grid-template-columns: 73px 101px auto;
+	}
 }
