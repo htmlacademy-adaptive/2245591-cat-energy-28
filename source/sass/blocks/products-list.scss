@@ -1,3 +1,15 @@
 .products-list {
-	//
+	display: flex;
+	flex-direction: column;
+	gap: 19px;
+
+	@media #{$not-mobile} {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 60px;
+	}
+
+	@media #{$desktop-only} {
+		gap: 80px;
+	}
 }

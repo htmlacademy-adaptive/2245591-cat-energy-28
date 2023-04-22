@@ -11,15 +11,36 @@
 	min-height: 100%;
 }
 
+// .page__centerer {
+// 	margin: 0 20px;
+
+// 	@media #{$not-mobile} {
+// 		margin: 0 30px;
+// 	}
+
+// 	@media #{$desktop-only} {
+// 		width: 1220px;
+// 		margin: 0 auto;
+// 	}
+// }
+
 .page__centerer {
-	margin: 0 20px;
+	--indent-min: 20;
+	--indent-max: 30;
+	--vp-min: 320;
+	--vp-max: 768;
+
+	--increment-indent: calc(var(--indent-max) - var(--indent-min));
+	--increment-vp: calc(var(--vp-max) - var(--vp-min));
+	--content-indent: calc(var(--indent-min) * 1px + var(--increment-indent) * (100vw - var(--vp-min) * 1px) / var(--increment-vp));
+	margin-inline: var(--content-indent);
 
 	@media #{$not-mobile} {
-		margin: 0 30px;
+		--content-indent: calc(var(--indent-max) * 1px);
 	}
 
 	@media #{$desktop-only} {
+		--content-indent: auto;
 		width: 1220px;
-		margin: 0 auto;
 	}
 }
