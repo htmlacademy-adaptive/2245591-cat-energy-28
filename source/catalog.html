@@ -10,7 +10,9 @@
 			<h2 class="visually-hidden">Карточки товаров</h2>
 			<ul class="catalog__products-list products-list">
 				<li class="products-list__item products-item">
-					{% include "./templates/picture.twig" with {name: "products/product1", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					<div class="products-item__image-wrapper">
+						{% include "./templates/picture.twig" with {name: "products/product1", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					</div>
 					<p class="products-item__name">Cat Energy PRO 500 г</p>
 					<dl class="products-item__parameters">
 						<div class="products-item__wrapper">
@@ -29,7 +31,9 @@
 					<a class="products-item__button button" href="#">Заказать</a>
 				</li>
 				<li class="products-list__item products-item">
-					{% include "./templates/picture.twig" with {name: "products/product2", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					<div class="products-item__image-wrapper">
+						{% include "./templates/picture.twig" with {name: "products/product2", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					</div>
 					<p class="products-item__name">Cat Energy PRO 1000 г</p>
 					<dl class="products-item__parameters">
 						<div class="products-item__wrapper">
@@ -48,7 +52,9 @@
 					<a class="products-item__button button" href="#">Заказать</a>
 				</li>
 				<li class="products-list__item products-item">
-					{% include "./templates/picture.twig" with {name: "products/product3", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					<div class="products-item__image-wrapper">
+						{% include "./templates/picture.twig" with {name: "products/product3", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					</div>
 					<p class="products-item__name">Cat Energy PRO 500 г</p>
 					<dl class="products-item__parameters">
 						<div class="products-item__wrapper">
@@ -67,7 +73,9 @@
 					<a class="products-item__button button" href="#">Заказать</a>
 				</li>
 				<li class="products-list__item products-item">
-					{% include "./templates/picture.twig" with {name: "products/product4", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					<div class="products-item__image-wrapper">
+						{% include "./templates/picture.twig" with {name: "products/product4", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					</div>
 					<p class="products-item__name">Cat Energy PRO 1000 г</p>
 					<dl class="products-item__parameters">
 						<div class="products-item__wrapper">
@@ -86,7 +94,9 @@
 					<a class="products-item__button button" href="#">Заказать</a>
 				</li>
 				<li class="products-list__item products-item">
-					{% include "./templates/picture.twig" with {name: "products/product5", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					<div class="products-item__image-wrapper">
+						{% include "./templates/picture.twig" with {name: "products/product5", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					</div>
 					<p class="products-item__name">Cat Energy SLIM 500 г</p>
 					<dl class="products-item__parameters">
 						<div class="products-item__wrapper">
@@ -105,7 +115,9 @@
 					<a class="products-item__button button" href="#">Заказать</a>
 				</li>
 				<li class="products-list__item products-item">
-					{% include "./templates/picture.twig" with {name: "products/product6", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					<div class="products-item__image-wrapper">
+						{% include "./templates/picture.twig" with {name: "products/product6", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					</div>
 					<p class="products-item__name">Cat Energy SLIM 1000 г</p>
 					<dl class="products-item__parameters">
 						<div class="products-item__wrapper">
@@ -124,7 +136,9 @@
 					<a class="products-item__button button" href="#">Заказать</a>
 				</li>
 				<li class="products-list__item products-item">
-					{% include "./templates/picture.twig" with {name: "products/product7", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					<div class="products-item__image-wrapper">
+						{% include "./templates/picture.twig" with {name: "products/product7", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
+					</div>
 					<p class="products-item__name">Cat Energy SLIM 500 г</p>
 					<dl class="products-item__parameters">
 						<div class="products-item__wrapper">
@@ -143,7 +157,7 @@
 					<a class="products-item__button button" href="#">Заказать</a>
 				</li>
 				<li class="products-list__item products-item products-item--show-more">
-					<span class="products-item__name">Показать еще 100500 товаров</span>
+					<span class="products-item__show-more-name">Показать еще 100500 товаров</span>
 					<span class="products-item__show-more-description">На самом деле вкусов гораздо больше!</span>
 					<a class="products-item__show-all-button button" href="#">Показать все</a>
 				</li>

@@ -1,3 +1,21 @@
 .logos {
-	//
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 100%;
+	align-items: center;
+	text-decoration: none;
+
+	@media #{$not-mobile} {
+		grid-template-columns: 71px 119px auto;
+	}
+}
+
+.logos__logo-text {
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+}
+
+.logos__logo-image {
+	object-fit: cover;
 }

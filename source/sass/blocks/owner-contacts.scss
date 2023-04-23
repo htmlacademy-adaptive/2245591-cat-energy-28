@@ -2,3 +2,19 @@
 	margin: 0;
 	margin-bottom: 35px;
 }
+
+.owner-contacts__label {
+	display: flex;
+	justify-content: space-between;
+	gap: 13px;
+}
+
+.owner-contacts__input {
+	flex-grow: 1;
+}
+
+.owner-contacts__label-wrapper {
+	@media #{$desktop-only} {
+		display: flex;
+	}
+}

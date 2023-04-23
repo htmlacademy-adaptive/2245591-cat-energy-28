@@ -4,7 +4,7 @@
 
 {% block main %}
 <main class="main-form">
-	<div class="page__centerer">
+	<div class="main-form__centerer page__centerer">
 		<h1 class="main-form__title heading heading--lvl-1">Подбор программы</h1>
 		<p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 		<form class="main-form__selection-form selection-form" action="https://echo.htmlacademy.ru/courses" method="get">
@@ -47,16 +47,18 @@
 			</fieldset>
 			<fieldset class="selection-form__owner-contacts owner-contacts">
 				<legend class="owner-contacts__title heading heading--lvl-3">Контактные данные (владельца кота)</legend>
-				<label class="owner-contacts__label" for="email">
-					<span class="owner-contacts__label-name label-name">E-mail:</span>
-					<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
-					<input class="owner-contacts__input input input--email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
-				</label>
-				<label class="owner-contacts__label" for="phone">
-					<span class="owner-contacts__label-name label-name">Телефон:</span>
-					<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
-					<input class="owner-contacts__input input input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
-				</label>
+				<div class="owner-contacts__label-wrapper">
+					<label class="owner-contacts__label" for="email">
+						<span class="owner-contacts__label-name label-name">E-mail:</span>
+						<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
+						<input class="owner-contacts__input input input--email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+					</label>
+					<label class="owner-contacts__label" for="phone">
+						<span class="owner-contacts__label-name label-name">Телефон:</span>
+						<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
+						<input class="owner-contacts__input input input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+					</label>
+				</div>
 			</fieldset>
 			<div class="selection-form__form-comments form-comments">
 				<label class="selection-form__title heading heading--lvl-3" for="comments">Комментарий</label>
@@ -81,8 +83,10 @@
 					<span class="additional-parameters__label-name label-name">Витамины</span>
 				</label>
 			</fieldset>
-			<button class="selection-form__button button" type="submit">Отправить заявку</button>
-			<span class="selection-form__warning" aria-hidden="true">* — Обязательные поля</span>
+			<div class="selection-form__button-wrapper">
+				<button class="selection-form__button button" type="submit">Отправить заявку</button>
+				<span class="selection-form__warning" aria-hidden="true">* — Обязательные поля</span>
+			</div>
 		</form>
 		<section class="contacts">
 			<h2 class="visually-hidden">Почтовый адрес</h2>

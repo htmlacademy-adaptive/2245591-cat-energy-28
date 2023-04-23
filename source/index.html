@@ -5,10 +5,12 @@
 {% block main %}
 <main class="main-index">
 	<section class="main-index__welcome welcome">
-		<div class="page__centerer">
-			<h1 class="welcome__main-title heading heading--lvl-1 heading--dark-background">Функциональное питание для котов</h1>
+		<div class="welcome__centerer page__centerer">
+			<h1 class="welcome__main-title heading heading--lvl-1">Функциональное питание для котов</h1>
 			<p class="welcome__main-description">Занялся собой? Займись котом!</p>
-			{% include "./templates/picture.twig" with {name: "can-image", class: "welcome__welcome-image", alt: "Изображение банки с кормом."} %}
+			<div class="welcome__welcome-image-wrapper">
+				{% include "./templates/picture.twig" with {name: "can-image", class: "welcome__welcome-image", alt: "Изображение банки с кормом."} %}
+			</div>
 			<a class="welcome__choose-button button" href="#">Подобрать программу</a>
 		</div>
 	</section>

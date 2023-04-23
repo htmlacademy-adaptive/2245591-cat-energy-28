@@ -1,3 +1,22 @@
+.selection-form {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media #{$desktop-only} {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.selection-form__label {
+	display: flex;
+	justify-content: space-between;
+	gap: 13px;
+}
+
+.selection-form__input {
+	flex-grow: 1;
+}
+
 .selection-form__title {
 	margin: 0;
 	margin-bottom: 46px;
@@ -5,7 +24,13 @@
 
 .selection-form__program-type {
 	padding: 0;
-	margin-bottom: 45px;
+	margin-top: 45px;
+
+	@media #{$desktop-only} {
+		grid-row: 1 / 4;
+		grid-column: 2 / 3;
+		margin: 0;
+	}
 }
 
 .selection-form__owner-contacts {
@@ -13,6 +38,16 @@
 	padding: 0;
 	margin-bottom: 23px;
 	border: none;
+
+	@media #{$desktop-only} {
+		grid-column: 1 / 3;
+	}
+}
+
+.selection-form__form-comments {
+	@media #{$desktop-only} {
+		grid-column: 1 / 3;
+	}
 }
 
 .selection-form__additional-parameters {
@@ -20,12 +55,28 @@
 	padding: 0;
 	margin-bottom: 21px;
 	border: none;
+
+	@media #{$desktop-only} {
+		grid-column: 1 / 3;
+	}
 }
 
 .selection-form__warning {
 	line-height: 16px;
 	color: #000000;
 	margin-bottom: 32px;
+}
+
+.selection-form__button-wrapper {
+	@media #{$not-mobile} {
+		display: flex;
+		gap: 64px;
+		align-items: center;
+	}
+
+	@media #{$desktop-only} {
+		gap: 84px;
+	}
 }
 
 .selection-form__button {

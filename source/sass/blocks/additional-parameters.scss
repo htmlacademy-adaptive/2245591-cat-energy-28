@@ -1,4 +1,24 @@
+.additional-parameters {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media #{$tablet-only} {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: none;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
 .additional-parameters__title {
 	margin: 0;
 	margin-bottom: 34px;
+}
+
+.additional-parameters__label {
+	@media #{$desktop-only} {
+		grid-row: 2 / 3;
+	}
 }
