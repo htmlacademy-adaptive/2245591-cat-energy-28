@@ -7,6 +7,8 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 13px;
+
+	flex-grow: 1;
 }
 
 .owner-contacts__input {

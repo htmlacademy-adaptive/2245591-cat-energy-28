@@ -49,7 +49,7 @@
 		</div>
 	</section>
 	<section class="main-index__examples examples">
-		<div class="page__centerer">
+		<div class="page__centerer examples__container">
 			<h2 class="examples__title heading heading--lvl-2">Живой пример</h2>
 			<p class="examples__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 			<dl class="examples__profits profits">
@@ -73,15 +73,6 @@
 			</figure>
 		</div>
 	</section>
-	<section class="contacts">
-		<h2 class="visually-hidden">Почтовый адрес</h2>
-		<p class="contacts__invitation">Приглашаем к сотрудничеству дилеров</p>
-		<address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-	</section>
-	</div>
-	<section class="map">
-		<h2 class="visually-hidden">Схема проезда</h2>
-		<iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e69f4e96c443d45cbe1a9d13eccc646da4c76ccd5fd76d18db368992ff36aad&amp;source=constructor" width="320" height="362"></iframe>
-	</section>
+	{% include "./templates/contacts.twig" %}
 </main>
 {% endblock %}

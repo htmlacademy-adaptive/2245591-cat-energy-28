@@ -257,6 +257,27 @@
 				}
 			]
 		},
+		"map-image": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 1440,
+					"height": 400
+				},
+				{
+					"viewport": "tablet",
+					"width": 768,
+					"height": 400
+				},
+				{
+					"viewport": "mobile",
+					"width": 320,
+					"height": 362
+				}
+			]
+		},
 		"test": {
 			"ext": "png",
 			"maxdppx": 2,

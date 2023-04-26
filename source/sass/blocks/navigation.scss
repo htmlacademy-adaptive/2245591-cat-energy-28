@@ -8,14 +8,10 @@
 	@media #{$not-mobile} {
 		position: absolute;
 		top: 0;
-		right: 30px;
+		right: 0;
 		display: flex;
 		justify-content: end;
 		gap: 34px;
-	}
-
-	@media #{$desktop-only} {
-		right: 110px;
 	}
 }
 

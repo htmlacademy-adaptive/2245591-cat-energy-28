@@ -1,11 +1,9 @@
 .products-list {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
 	gap: 19px;
 
 	@media #{$not-mobile} {
-		flex-direction: row;
-		flex-wrap: wrap;
 		gap: 60px;
 	}
 

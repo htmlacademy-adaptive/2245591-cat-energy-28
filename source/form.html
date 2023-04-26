@@ -88,15 +88,7 @@
 				<span class="selection-form__warning" aria-hidden="true">* — Обязательные поля</span>
 			</div>
 		</form>
-		<section class="contacts">
-			<h2 class="visually-hidden">Почтовый адрес</h2>
-			<p class="contacts__invitation">Приглашаем к сотрудничеству дилеров</p>
-			<address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-		</section>
 	</div>
-	<section class="map">
-		<h2 class="visually-hidden">Схема проезда</h2>
-		<iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e69f4e96c443d45cbe1a9d13eccc646da4c76ccd5fd76d18db368992ff36aad&amp;source=constructor" width="320" height="362"></iframe>
-	</section>
+	{% include "./templates/contacts.twig" %}
 </main>
 {% endblock %}

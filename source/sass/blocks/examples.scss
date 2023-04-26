@@ -2,6 +2,16 @@
 	background-color: #eaeaea;
 }
 
+.examples__container {
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+
+	@media #{$desktop-only} {
+		grid-template-rows: repeat(3, auto);
+		grid-template-columns: repeat(2, auto);
+	}
+}
+
 .examples__title {
 	margin: 0;
 }
@@ -9,4 +19,11 @@
 .examples__description {
 	margin: 0;
 	padding: 0;
+}
+
+.examples__compare-images {
+	@media #{$desktop-only} {
+		grid-row: 1 / 4;
+		grid-column: 2 / 3;
+	}
 }

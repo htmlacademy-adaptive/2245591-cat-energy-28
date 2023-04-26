@@ -8,9 +8,26 @@
 	text-transform: uppercase;
 	color: #000000;
 	margin-bottom: 39px;
+
+	@media #{$tablet-only} {
+		padding-left: 39px;
+		padding-right: 39px;
+	}
 }
 
 .main-form__title {
 	margin: 0;
 	margin-bottom: 37px;
+
+	@media #{$tablet-only} {
+		padding-left: 39px;
+		padding-right: 39px;
+	}
+}
+
+.main-form__selection-form {
+	@media #{$tablet-only} {
+		padding-left: 39px;
+		padding-right: 39px;
+	}
 }
