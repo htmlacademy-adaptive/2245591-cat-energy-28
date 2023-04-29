@@ -67,9 +67,12 @@
 				</div>
 			</dl>
 			<figure class="examples__compare-images compare-images">
-				{% include "./templates/picture.twig" with {name: "cat-slider-fat", class: "compare-images__fat-cat", alt: "Толстый кот."} %}
-				<input class="compare-images__slider" type="range">
-				{% include "./templates/picture.twig" with {name: "cat-slider-skinny", class: "compare-images__skinny-cat", alt: "Худой кот."} %}
+				<div class="compare-images__fat-cat-container">
+					{% include "./templates/picture.twig" with {name: "cat-slider-fat", class: "compare-images__fat-cat", alt: "Толстый кот."} %}
+				</div>
+				<div class="compare-images__skinny-cat-container">
+					{% include "./templates/picture.twig" with {name: "cat-slider-skinny", class: "compare-images__skinny-cat", alt: "Худой кот."} %}
+				</div>
 			</figure>
 		</div>
 	</section>

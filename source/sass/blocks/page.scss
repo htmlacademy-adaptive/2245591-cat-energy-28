@@ -35,6 +35,12 @@
 	--content-indent: calc(var(--indent-min) * 1px + var(--increment-indent) * (100vw - var(--vp-min) * 1px) / var(--increment-vp));
 	margin-inline: var(--content-indent);
 
+	&--space_increased {
+		@media #{$tablet-only} {
+			padding-inline: 40px;
+		}
+	}
+
 	@media #{$not-mobile} {
 		--content-indent: calc(var(--indent-max) * 1px);
 	}

@@ -1,5 +1,9 @@
 .contacts {
 	display: grid;
+
+	@media #{$desktop-only} {
+		grid-template-columns: auto 565px 655px auto;
+	}
 }
 
 .contacts__postmail {
@@ -16,11 +20,10 @@
 		width: 565px;
 		padding: 56px 60px 56px 80px;
 		margin-top: 95px;
-		margin-left: 110px;
 		margin-bottom: 107px;
 		background-color: #ffffff;
 		grid-row: 1 / 2;
-		grid-column: 1 / 2;
+		grid-column: 2 / 3;
 		z-index: 2;
 	}
 }
@@ -28,7 +31,7 @@
 .contacts__map {
 	@media #{$desktop-only} {
 		grid-row: 1 / 2;
-		grid-column: 1 / 2;
+		grid-column: 1 / 5;
 	}
 }
 

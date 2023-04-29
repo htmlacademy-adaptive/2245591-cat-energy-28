@@ -73,8 +73,6 @@
 	color: #ffffff;
 
 	@media #{$not-mobile} {
-		font-size: 60px;
-		line-height: 60px;
 		color: #000000;
 	}
 }

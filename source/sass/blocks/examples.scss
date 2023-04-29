@@ -22,6 +22,8 @@
 }
 
 .examples__compare-images {
+	margin: 0 auto;
+
 	@media #{$desktop-only} {
 		grid-row: 1 / 4;
 		grid-column: 2 / 3;
