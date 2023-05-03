@@ -1,5 +1,10 @@
 .advantages__title {
 	margin: 0;
+	margin-bottom: 40px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 32px;
+	}
 }
 
 .advantages__advantages-list {
@@ -22,11 +27,13 @@
 	@media #{$desktop-only} {
 		grid-template-rows: 1fr;
 		grid-template-columns: repeat(4, 1fr);
+		column-gap: 77px;
 	}
 }
 
 .advantages__advantages-item {
 	display: grid;
+	position: relative;
 	grid-template-columns: 60px 1fr;
 	gap: 20px;
 
@@ -36,61 +43,73 @@
 		gap: 31px;
 		font-size: 16px;
 		line-height: 24px;
+		padding-top: 40px;
+		min-height: 240px;
+
+		&::after {
+			display: block;
+			position: absolute;
+			width: 134px;
+			height: 280px;
+			top: 0;
+			right: 0;
+			font-family: var(--accent-font);
+			font-size: 280px;
+			line-height: 280px;
+			color: #f2f2f2;
+		}
+
+		&--leaf::after {
+			content: "1";
+		}
+
+		&--container::after {
+			content: "2";
+		}
+
+		&--tableware::after {
+			content: "3";
+		}
+
+		&--clock::after {
+			content: "4";
+		}
+	}
+
+	&::before {
+		display: block;
+		content: "";
+		width: 60px;
+		height: 60px;
+
+		@media #{$not-mobile} {
+			width: 80px;
+			height: 80px;
+		}
 	}
 
 	&--leaf::before {
-		display: block;
-		content: "";
-		width: 60px;
-		height: 60px;
 		background: #68b738 url("../../icons/stack.svg#advantages-leaf") no-repeat center;
 		background-size: 30px 32px;
-
-		@media #{$not-mobile} {
-			width: 80px;
-			height: 80px;
-		}
 	}
 
+
 	&--container::before {
-		display: block;
-		content: "";
-		width: 60px;
-		height: 60px;
 		background: #68b738 url("../../icons/stack.svg#advantages-container") no-repeat center;
 		background-size: 30px 32px;
-
-		@media #{$not-mobile} {
-			width: 80px;
-			height: 80px;
-		}
 	}
 
 	&--tableware::before {
-		display: block;
-		content: "";
-		width: 60px;
-		height: 60px;
 		background: #68b738 url("../../icons/stack.svg#advantages-tableware") no-repeat center;
 		background-size: 30px 32px;
-
-		@media #{$not-mobile} {
-			width: 80px;
-			height: 80px;
-		}
 	}
 
 	&--clock::before {
-		display: block;
-		content: "";
-		width: 60px;
-		height: 60px;
 		background: #68b738 url("../../icons/stack.svg#advantages-clock") no-repeat center;
 		background-size: 30px 32px;
-
-		@media #{$not-mobile} {
-			width: 80px;
-			height: 80px;
-		}
 	}
+}
+
+.advantages__advantages-item-name {
+	z-index: 2;
 }

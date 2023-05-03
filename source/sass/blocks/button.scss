@@ -1,7 +1,7 @@
 .button {
 	display: block;
 	box-sizing: border-box;
-	padding: 7px 44px;
+	padding: 10px 44px;
 	background: #68b738;
 	font-family: var(--accent-font);
 	text-transform: uppercase;
@@ -9,4 +9,12 @@
 	text-decoration: none;
 	text-align: center;
 	height: 40px;
+
+	&:hover {
+		background: #5eaa2f;
+	}
+
+	&:active {
+		color: rgb(255 255 255 / 0.3);
+	}
 }

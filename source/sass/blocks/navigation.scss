@@ -3,15 +3,17 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	z-index: 2;
 
 	@media #{$not-mobile} {
 		position: absolute;
-		top: 0;
+		top: -10px;
 		right: 0;
 		display: flex;
 		justify-content: end;
-		gap: 34px;
+		flex-wrap: wrap;
+		max-width: 70%;
+		column-gap: 34px;
+		z-index: 2;
 	}
 }
 
@@ -20,6 +22,38 @@
 	text-transform: uppercase;
 	padding-top: 22px;
 	padding-bottom: 24px;
+
+	@media #{$mobile-only} {
+		border-top: 1px solid #e6e6e6;
+
+		&:last-child {
+			border-bottom: 1px solid #e6e6e6;
+		}
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.navigation__item--current {
+	@media #{$not-mobile} {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: 13px;
+			left: 0;
+			height: 2px;
+			background: #68b738;
+		}
+	}
 }
 
 .navigation__link {
@@ -27,25 +61,30 @@
 	font-family: var(--accent-font);
 	font-style: normal;
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 20px;
+	line-height: 20px;
 	color: #000000;
 	text-decoration: none;
 	text-align: center;
 
+	@media #{$not-mobile} {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
 	@media #{$desktop-only} {
 		// color: #ffffff;
-		// font-size: 20px;
-		// line-height: 30px;
+		font-size: 20px;
+		line-height: 30px;
 	}
 }
 
 .navigation__toggle-wrapper {
 	position: absolute;
-	width: 30px;
-	height: 30px;
-	top: 18px;
-	right: 20px;
+	width: 24px;
+	height: 24px;
+	top: 10px;
+	right: 0;
 
 	@media #{$not-mobile} {
 		display: none;
@@ -61,8 +100,15 @@
 }
 
 .navigation__toggle {
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	padding: 0;
+	width: 30px;
+	height: 30px;
 	border: none;
 	background: none;
+	cursor: pointer;
 }
 
 .navigation--no-js {
@@ -71,12 +117,16 @@
 	}
 
 	.navigation__list {
-		display: grid;
-		grid-template-columns: 1fr;
+		@media #{$mobile-only} {
+			display: grid;
+			grid-template-columns: 1fr;
+			margin-top: 17px;
+			margin-bottom: -17px;
+		}
 	}
 }
 
-.navigation--button-pushed {
+.navigation--opened {
 	@media #{$mobile-only} {
 		.navigation__toggle-wrapper {
 			&::before {
@@ -92,8 +142,9 @@
 			position: absolute;
 			display: grid;
 			grid-template-columns: 1fr;
-			width: 100%;
-			margin-left: calc(-1 * var(--content-indent));
+			width: 100vw;
+			left: calc(-1 * var(--content-indent));
+			top: 58px;
 			background: #ffffff;
 			z-index: 3;
 		}

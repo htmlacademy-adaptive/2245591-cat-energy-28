@@ -1,8 +1,11 @@
 .header {
-
 	background: #ffffff;
 	padding-top: 10px;
 	padding-bottom: 17px;
+
+	@media #{$desktop-only} {
+		padding-top: 53px;
+	}
 }
 
 .header__centerer {

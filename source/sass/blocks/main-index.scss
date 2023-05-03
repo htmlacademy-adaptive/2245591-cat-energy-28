@@ -4,4 +4,47 @@
 
 .main-index__welcome {
 	margin-bottom: 20px;
+
+	@media #{$tablet-only} {
+		margin-bottom: 0;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 82px;
+	}
+}
+
+.main-index__programs {
+	margin-bottom: 20px;
+
+	@media #{$tablet-only} {
+		margin-bottom: 45px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 71px;
+	}
+}
+
+.main-index__advantages {
+	margin-bottom: 49px;
+	position: relative;
+
+	@media #{$tablet-only} {
+		margin-bottom: 90px;
+
+		&::after {
+			display: block;
+			position: absolute;
+			content: "";
+			width: 100vw;
+			height: 1px;
+			bottom: -47px;
+			background: #e6e6e6;
+		}
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 69px;
+	}
 }
