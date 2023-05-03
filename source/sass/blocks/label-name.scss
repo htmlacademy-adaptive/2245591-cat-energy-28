@@ -1,6 +1,12 @@
 .label-name {
 	font-family: var(--accent-font);
+	color: #000000;
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }

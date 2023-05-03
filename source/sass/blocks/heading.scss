@@ -4,6 +4,32 @@
 	font-weight: 400;
 	color: #000000;
 
+	&::after {
+		display: block;
+		position: absolute;
+		content: none;
+		width: 100vw;
+		height: 2px;
+		top: 17px;
+		right: 0;
+		background: var(--line-color);
+		box-shadow: 100vw 0 0 0 var(--line-color);
+	}
+
+	&--has-decor {
+		position: relative;
+		--line-indent: var(--content-indent);
+		--line-color: #68b738;
+
+		@media #{$desktop-only} {
+			--line-indent: 40px;
+		}
+
+		&::after {
+			content: "";
+		}
+	}
+
 	&--lvl-1 {
 		font-size: 36px;
 		line-height: 36px;
@@ -31,6 +57,26 @@
 		@media #{$not-mobile} {
 			font-size: 36px;
 			line-height: 36px;
+		}
+	}
+}
+
+.heading__back {
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		display: block;
+		position: absolute;
+		content: "";
+		width: calc(100% + 2 * var(--line-indent));
+		height: 100%;
+		left: calc(-1 * var(--line-indent));
+		background: #ffffff;
+		z-index: -1;
+
+		@supports not (mask-size: cover) {
+			max-width: 150px;
 		}
 	}
 }

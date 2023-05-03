@@ -29,27 +29,30 @@
 				<ul class="program-type__list">
 					<li class="program-type__item">
 						<label class="program-type__label" for="weight-loss">
-							<input class="program-type__input" type="radio" name="program-type" value="weight-loss" id="weight-loss" checked>
+							<input class="program-type__input visually-hidden" type="radio" name="program-type" value="weight-loss" id="weight-loss" checked>
+							<span class="program-type__control-mark"></span>
 							<span class="program-type__label-name label-name">Похудение</span>
 						</label>
 					</li>
 					<li class="program-type__item">
 						<label class="program-type__label" for="weight-gain">
-							<input class="program-type__input" type="radio" name="program-type" value="weight-gain" id="weight-gain">
+							<input class="program-type__input visually-hidden" type="radio" name="program-type" value="weight-gain" id="weight-gain">
+							<span class="program-type__control-mark"></span>
 							<span class="program-type__label-name label-name">Набор массы</span>
 						</label>
 					</li>
 					<li class="program-type__item">
 						<label class="program-type__label" for="unknown">
-							<input class="program-type__input" type="radio" name="program-type" value="unknown" id="unknown">
+							<input class="program-type__input visually-hidden" type="radio" name="program-type" value="unknown" id="unknown">
+							<span class="program-type__control-mark"></span>
 							<span class="program-type__label-name label-name">Не знаю (Нужен ваш совет)</span>
 						</label>
 					</li>
 				</ul>
 			</fieldset>
 			<fieldset class="selection-form__owner-contacts owner-contacts">
-				<legend class="owner-contacts__title heading heading--lvl-3">
-					<span class="owner-contacts__title-wrapper">Контактные данные (владельца кота)</span>
+				<legend class="owner-contacts__title title-line heading heading--lvl-3 heading--has-decor">
+					<span class="heading__back">Контактные данные (владельца кота)</span>
 				</legend>
 				<div class="owner-contacts__label-wrapper">
 					<label class="owner-contacts__label" for="email">
@@ -65,27 +68,37 @@
 				</div>
 			</fieldset>
 			<div class="selection-form__form-comments form-comments">
-				<label class="selection-form__title heading heading--lvl-3" for="comments">Комментарий</label>
+				<label class="form-comments__title heading heading--lvl-3 heading--has-decor" for="comments">
+					<span class="heading__back">Комментарий</span>
+				</label>
 				<textarea class="form-comments__comments-area" name="comments" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
 			</div>
 			<fieldset class="selection-form__additional-parameters additional-parameters">
-				<legend class="additional-parameters__title heading heading--lvl-3">Дополнительно</legend>
-				<label class="additional-parameters__label" for="sugar-substitute">
-					<input class="additional-parameters__input" type="checkbox" name="additional-parameters" value="sugar-substitute" id="sugar-substitute" checked>
-					<span class="additional-parameters__label-name label-name">Сахарозаменитель</span>
-				</label>
-				<label class="additional-parameters__label" for="water">
-					<input class="additional-parameters__input" type="checkbox" name="additional-parameters" value="water" id="water">
-					<span class="additional-parameters__label-name label-name">Питьевая вода</span>
-				</label>
-				<label class="additional-parameters__label" for="milk">
-					<input class="additional-parameters__input" type="checkbox" name="additional-parameters" value="milk" id="milk">
-					<span class="additional-parameters__label-name label-name">Молоко</span>
-				</label>
-				<label class="additional-parameters__label" for="vitamins">
-					<input class="additional-parameters__input" type="checkbox" name="additional-parameters" value="vitamins" id="vitamins">
-					<span class="additional-parameters__label-name label-name">Витамины</span>
-				</label>
+				<legend class="additional-parameters__title heading heading--lvl-3 heading--has-decor">
+					<span class="heading__back">Дополнительно</span>
+				</legend>
+				<div class="additional-parameters__input-wrapper">
+					<label class="additional-parameters__label" for="sugar-substitute">
+						<input class="additional-parameters__input visually-hidden" type="checkbox" name="additional-parameters" value="sugar-substitute" id="sugar-substitute" checked>
+						<span class="additional-parameters__control-mark"></span>
+						<span class="additional-parameters__label-name label-name">Сахарозаменитель</span>
+					</label>
+					<label class="additional-parameters__label" for="water">
+						<input class="additional-parameters__input visually-hidden" type="checkbox" name="additional-parameters" value="water" id="water">
+						<span class="additional-parameters__control-mark"></span>
+						<span class="additional-parameters__label-name label-name">Питьевая вода</span>
+					</label>
+					<label class="additional-parameters__label" for="milk">
+						<input class="additional-parameters__input visually-hidden" type="checkbox" name="additional-parameters" value="milk" id="milk">
+						<span class="additional-parameters__control-mark"></span>
+						<span class="additional-parameters__label-name label-name">Молоко</span>
+					</label>
+					<label class="additional-parameters__label" for="vitamins">
+						<input class="additional-parameters__input visually-hidden" type="checkbox" name="additional-parameters" value="vitamins" id="vitamins">
+						<span class="additional-parameters__control-mark"></span>
+						<span class="additional-parameters__label-name label-name">Витамины</span>
+					</label>
+				</div>
 			</fieldset>
 			<div class="selection-form__button-wrapper">
 				<button class="selection-form__button button" type="submit">Отправить заявку</button>

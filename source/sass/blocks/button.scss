@@ -9,6 +9,14 @@
 	text-decoration: none;
 	text-align: center;
 	height: 40px;
+	border: none;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 0px;
+		padding: 13px 44px;
+		height: 52px;
+	}
 
 	&:hover {
 		background: #5eaa2f;

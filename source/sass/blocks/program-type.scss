@@ -19,8 +19,56 @@
 
 .program-type__list {
 	display: grid;
-	gap: 13px;
+	gap: 25px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	padding-left: 45px;
+
+	@media #{$not-mobile} {
+		gap: 23px;
+		padding-left: 60px;
+	}
+}
+
+.program-type__label {
+	position: relative;
+}
+
+.program-type__control-mark {
+	position: absolute;
+	box-sizing: border-box;
+	top: -9px;
+	left: -45px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #cdcdcd;
+	background: #ffffff;
+	border-radius: 50%;
+
+	@media #{$not-mobile} {
+		top: -15px;
+		left: -60px;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.program-type__input[type="radio"]:checked + .program-type__control-mark::before {
+	position: absolute;
+	box-sizing: border-box;
+	content: "";
+	top: 8px;
+	left: 8px;
+	width: 13px;
+	height: 13px;
+	background-color: #68b738;
+	border-radius: 50%;
+
+	@media #{$not-mobile} {
+		top: 10px;
+		left: 10px;
+		width: 18px;
+		height: 18px;
+	}
 }

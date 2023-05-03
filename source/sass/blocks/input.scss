@@ -7,4 +7,11 @@
 	padding-bottom: 13px;
 	padding-left: 20px;
 	border: 1px solid #e7e7e7;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
 }

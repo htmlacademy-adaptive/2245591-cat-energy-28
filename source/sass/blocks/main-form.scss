@@ -6,7 +6,7 @@
 	padding-top: 27px;
 
 	@media #{$not-mobile} {
-		padding-top: 58px;
+		padding: 58px 36px 0 40px;
 	}
 
 	@media #{$desktop-only} {
@@ -18,7 +18,15 @@
 	font-family: var(--accent-font);
 	text-transform: uppercase;
 	color: #000000;
+	margin: 0;
 	margin-bottom: 39px;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 66px;
+		margin-right: 309px;
+	}
 }
 
 .main-form__title {

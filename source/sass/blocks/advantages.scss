@@ -14,6 +14,7 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	counter-reset: section;
 
 	@media #{$tablet-only} {
 		display: grid;
@@ -46,6 +47,26 @@
 		padding-top: 40px;
 		min-height: 240px;
 
+		&--leaf::after {
+			counter-increment: section;
+			content: counter(section);
+		}
+
+		&--container::after {
+			counter-increment: section;
+			content: counter(section);
+		}
+
+		&--tableware::after {
+			counter-increment: section;
+			content: counter(section);
+		}
+
+		&--clock::after {
+			counter-increment: section;
+			content: counter(section);
+		}
+
 		&::after {
 			display: block;
 			position: absolute;
@@ -57,34 +78,6 @@
 			font-size: 280px;
 			line-height: 280px;
 			color: #f2f2f2;
-		}
-
-		&--leaf::after {
-			content: "1";
-		}
-
-		&--container::after {
-			content: "2";
-		}
-
-		&--tableware::after {
-			content: "3";
-		}
-
-		&--clock::after {
-			content: "4";
-		}
-	}
-
-	&::before {
-		display: block;
-		content: "";
-		width: 60px;
-		height: 60px;
-
-		@media #{$not-mobile} {
-			width: 80px;
-			height: 80px;
 		}
 	}
 
@@ -107,6 +100,18 @@
 	&--clock::before {
 		background: #68b738 url("../../icons/stack.svg#advantages-clock") no-repeat center;
 		background-size: 30px 32px;
+	}
+
+	&::before {
+		display: block;
+		content: "";
+		width: 60px;
+		height: 60px;
+
+		@media #{$not-mobile} {
+			width: 80px;
+			height: 80px;
+		}
 	}
 }
 
