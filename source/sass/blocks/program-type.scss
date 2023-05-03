@@ -1,8 +1,25 @@
 .program-type {
+	position: relative;
 	border: none;
+	padding: 22px 4px 19px 0;
+
+	@media #{$mobile-only} {
+		&::after {
+			display: block;
+			position: absolute;
+			content: "";
+			width: 100vw;
+			height: 1px;
+			left: calc(-1 * var(--content-indent));
+			bottom: 0;
+			background: #d9d9d9;
+		}
+	}
 }
 
 .program-type__list {
+	display: grid;
+	gap: 13px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;

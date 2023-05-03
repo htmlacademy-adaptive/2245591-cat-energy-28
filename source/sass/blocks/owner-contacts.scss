@@ -1,21 +1,54 @@
+.owner-contacts {
+	padding: 0;
+}
+
 .owner-contacts__title {
+	position: relative;
+	padding: 0;
 	margin: 0;
 	margin-bottom: 35px;
+
+	&::after {
+		display: block;
+		position: absolute;
+		content: "";
+		width: 100vw;
+		height: 2px;
+		top: 17px;
+		left: 0;
+		background: #68b738;
+	}
+}
+
+.owner-contacts__title-wrapper {
+	position: relative;
+	z-index: 2;
+
+	&::before {
+		display: block;
+		position: absolute;
+		content: "";
+		width: 120%;
+		height: 100%;
+		left: 0;
+		background: #ffffff;
+		z-index: 1;
+	}
 }
 
 .owner-contacts__label {
 	display: flex;
 	justify-content: space-between;
-	gap: 13px;
 	flex-grow: 1;
+	align-items: center;
 }
 
 .owner-contacts__input {
 	flex-grow: 1;
+	margin-left: 13px;
 }
 
 .owner-contacts__label-wrapper {
-	@media #{$desktop-only} {
-		display: flex;
-	}
+	display: grid;
+	gap: 14px;
 }

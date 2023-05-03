@@ -83,7 +83,6 @@
 
 	@media #{$not-mobile} {
 		&::after {
-
 			display: block;
 			position: absolute;
 			content: "";

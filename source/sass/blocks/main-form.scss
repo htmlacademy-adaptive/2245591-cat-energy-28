@@ -2,6 +2,18 @@
 	background: #ffffff;
 }
 
+.main-form__centerer {
+	padding-top: 27px;
+
+	@media #{$not-mobile} {
+		padding-top: 58px;
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 71px;
+	}
+}
+
 .main-form__description {
 	font-family: var(--accent-font);
 	text-transform: uppercase;
@@ -12,4 +24,12 @@
 .main-form__title {
 	margin: 0;
 	margin-bottom: 37px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 54px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 56px;
+	}
 }

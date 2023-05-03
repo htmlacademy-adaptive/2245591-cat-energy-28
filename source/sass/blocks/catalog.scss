@@ -2,18 +2,27 @@
 	background: #ffffff;
 }
 
+.catalog__centerer {
+	padding-top: 27px;
+
+	@media #{$not-mobile} {
+		padding-top: 58px;
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 71px;
+	}
+}
+
 .catalog__title {
 	margin: 0;
-
 	margin-bottom: 49px;
 
 	@media #{$not-mobile} {
-		margin-top: 58px;
 		margin-bottom: 82px;
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 71px;
 		margin-bottom: 84px;
 	}
 }

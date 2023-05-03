@@ -8,20 +8,22 @@
 		<h1 class="main-form__title heading heading--lvl-1">Подбор программы</h1>
 		<p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 		<form class="main-form__selection-form selection-form" action="https://echo.htmlacademy.ru/courses" method="get">
-			<label class="selection-form__label" for="name">
-				<span class="selection-form__label-name label-name">Имя:</span>
-				<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
-				<input class="selection-form__input input" type="text" id="name" placeholder="Барсик" required>
-			</label>
-			<label class="selection-form__label" for="weight">
-				<span class="selection-form__label-name label-name">Вес (кг):</span>
-				<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
-				<input class="selection-form__input selection-form__input--weight input" type="number" id="weight" placeholder="7" required>
-			</label>
-			<label class="selection-form__label" for="age">
-				<span class="selection-form__label-name label-name">Возраст (лет):</span>
-				<input class="selection-form__input selection-form__input--age input" type="number" id="age" placeholder="7">
-			</label>
+			<div class="selection-form__setting-data-wrapper">
+				<label class="selection-form__label" for="name">
+					<span class="selection-form__label-name label-name">Имя:</span>
+					<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
+					<input class="selection-form__input input" type="text" id="name" placeholder="Барсик" required>
+				</label>
+				<label class="selection-form__label" for="weight">
+					<span class="selection-form__label-name label-name">Вес (кг):</span>
+					<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
+					<input class="selection-form__input selection-form__input--weight input" type="number" id="weight" placeholder="7" required>
+				</label>
+				<label class="selection-form__label" for="age">
+					<span class="selection-form__label-name label-name">Возраст (лет):</span>
+					<input class="selection-form__input selection-form__input--age input" type="number" id="age" placeholder="7">
+				</label>
+			</div>
 			<fieldset class="selection-form__program-type program-type">
 				<legend class="visually-hidden">Тип программы</legend>
 				<ul class="program-type__list">
@@ -46,7 +48,9 @@
 				</ul>
 			</fieldset>
 			<fieldset class="selection-form__owner-contacts owner-contacts">
-				<legend class="owner-contacts__title heading heading--lvl-3">Контактные данные (владельца кота)</legend>
+				<legend class="owner-contacts__title heading heading--lvl-3">
+					<span class="owner-contacts__title-wrapper">Контактные данные (владельца кота)</span>
+				</legend>
 				<div class="owner-contacts__label-wrapper">
 					<label class="owner-contacts__label" for="email">
 						<span class="owner-contacts__label-name label-name">E-mail:</span>
