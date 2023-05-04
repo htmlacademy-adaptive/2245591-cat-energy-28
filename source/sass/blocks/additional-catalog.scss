@@ -9,7 +9,9 @@
 
 	@media #{$desktop-only} {
 		grid-template-rows: repeat(2, auto);
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: auto 245px;
+		row-gap: 81px;
+		column-gap: 79px;
 	}
 }
 
@@ -49,6 +51,29 @@
 		left: 50%;
 		transform: translate(-50%);
 		background: url("../../icons/stack.svg#gift") no-repeat center;
+	}
+
+	@media #{$tablet-only} {
+		text-align: start;
+		padding: 71px 124px 69px 422px;
+
+		&::before {
+			width: 80px;
+			height: 82px;
+			top: 57px;
+			left: 117px;
+		}
+	}
+
+	@media #{$desktop-only} {
+		text-align: center;
+		padding: 184px 43px 42px 41px;
+
+		&::before {
+			width: 80px;
+			height: 82px;
+			top: 57px;
+		}
 	}
 }
 
