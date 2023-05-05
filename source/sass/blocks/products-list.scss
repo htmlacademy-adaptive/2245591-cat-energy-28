@@ -4,11 +4,12 @@
 	gap: 19px;
 
 	@media #{$not-mobile} {
-		gap: 60px;
+		column-gap: 60px;
+		row-gap: 54px;
 	}
 
 	@media #{$desktop-only} {
 		column-gap: 80px;
-		row-gap: 63px;
+		row-gap: 60px;
 	}
 }

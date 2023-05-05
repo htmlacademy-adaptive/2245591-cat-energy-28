@@ -14,8 +14,30 @@
 	display: block;
 	margin: 0 auto;
 	object-fit: cover;
+
+	@media #{$not-mobile} {
+		margin-left: 0;
+		width: 105px;
+	}
+
+	@media #{$desktop-only} {
+		width: 118px;
+		height: 22px;
+		margin-left: 12px;
+		margin-top: 3px;
+	}
 }
 
 .logos__logo-image {
 	object-fit: cover;
+
+	@media #{$not-mobile} {
+		width: 61px;
+		height: 50px;
+	}
+
+	@media #{$desktop-only} {
+		width: 70px;
+		height: 60px;
+	}
 }

@@ -42,6 +42,12 @@
 	text-transform: uppercase;
 	color: #111111;
 	margin: 0;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 26px;
+		margin-top: 4px;
+	}
 }
 
 .contacts__address {
@@ -49,6 +55,16 @@
 	line-height: 20px;
 
 	@media #{$not-mobile} {
+		justify-self: start;
 		text-align: end;
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: auto;
+	}
+}
+
+.contacts__linebreak {
+	@media #{$mobile-only} {
+		display: none;
 	}
 }

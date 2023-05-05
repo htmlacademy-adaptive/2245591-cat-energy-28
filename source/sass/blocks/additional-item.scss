@@ -16,14 +16,16 @@
 	}
 
 	@media #{$not-mobile} {
+		border: 1px solid #cdcdcd;
+
 		&::after {
-			bottom: 0;
+			content: none;
 		}
 	}
 
 	@media #{$tablet-only} {
 		grid-template-rows: repeat(2, auto);
-		grid-template-columns: 1fr 1fr 90px;
+		grid-template-columns: 1fr 1fr 93px;
 		row-gap: 23px;
 		padding: 26px 38px 28px 38px;
 	}
@@ -31,7 +33,7 @@
 	@media #{$desktop-only} {
 		grid-template-rows: 1fr;
 		grid-template-columns: 1fr 244px 82px 244px;
-		padding: 15px 0 17px 0;
+		padding: 14px 0 15px 0;
 		align-items: center;
 	}
 }

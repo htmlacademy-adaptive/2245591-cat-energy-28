@@ -107,7 +107,7 @@
 	@media #{$tablet-only} {
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
-		margin-top: 25px;
+		margin-top: 3px;
 	}
 }
 
@@ -148,6 +148,7 @@
 	}
 
 	@media #{$tablet-only} {
+		margin-top: auto;
 		grid-column: 1 / 2;
 		grid-row: 3 / 4;
 	}

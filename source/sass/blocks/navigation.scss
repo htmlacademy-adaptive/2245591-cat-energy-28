@@ -6,13 +6,13 @@
 
 	@media #{$not-mobile} {
 		position: absolute;
-		top: -10px;
+		top: -6px;
 		right: 0;
 		display: flex;
 		justify-content: end;
 		flex-wrap: wrap;
 		max-width: 70%;
-		column-gap: 34px;
+		column-gap: 36px;
 		z-index: 2;
 	}
 }
@@ -68,6 +68,7 @@
 	text-align: center;
 
 	@media #{$not-mobile} {
+		font-weight: 400;
 		font-size: 18px;
 		line-height: 24px;
 	}

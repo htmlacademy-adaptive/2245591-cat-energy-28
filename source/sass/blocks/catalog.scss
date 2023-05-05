@@ -4,13 +4,16 @@
 
 .catalog__centerer {
 	padding-top: 27px;
+	margin-bottom: 35px;
 
 	@media #{$not-mobile} {
-		padding-top: 58px;
+		padding-top: 48px;
+		margin-bottom: 76px;
 	}
 
 	@media #{$desktop-only} {
-		padding-top: 79px;
+		padding-top: 58px;
+		margin-bottom: 86px;
 	}
 }
 
@@ -33,11 +36,11 @@
 	}
 
 	@media #{$not-mobile} {
-		margin-bottom: 82px;
+		margin-bottom: 75px;
 	}
 
 	@media #{$desktop-only} {
-		margin-bottom: 84px;
+		margin-bottom: 77px;
 	}
 }
 
@@ -57,10 +60,4 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-}
-
-.catalog__additional-catalog {
-	@media #{$desktop-only} {
-		margin-bottom: 86px;
-	}
 }

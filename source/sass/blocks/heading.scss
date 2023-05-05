@@ -21,6 +21,12 @@
 		--line-indent: var(--content-indent);
 		--line-color: #68b738;
 
+		@media #{$tablet-only} {
+			&::after {
+				top: 22px;
+			}
+		}
+
 		@media #{$desktop-only} {
 			--line-indent: 40px;
 		}

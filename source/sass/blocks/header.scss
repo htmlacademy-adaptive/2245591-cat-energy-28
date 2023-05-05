@@ -16,6 +16,10 @@
 		}
 	}
 
+	@media #{$tablet-only} {
+		padding-top: 0;
+	}
+
 	@media #{$desktop-only} {
 		padding-top: 53px;
 	}
