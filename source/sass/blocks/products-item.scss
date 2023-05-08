@@ -3,8 +3,12 @@
 	padding-top: 11px;
 	padding-bottom: 14px;
 
-	@media #{$mobile-only} {
-		&::after {
+	@media #{$not-mobile} {
+		padding: 0;
+	}
+
+	&::after {
+		@media #{$mobile-only} {
 			display: block;
 			position: absolute;
 			content: "";
@@ -15,12 +19,8 @@
 			background: #ebebeb;
 			box-shadow: 100vw 0 0 0 #ebebeb;
 		}
-	}
 
-	@media #{$not-mobile} {
-		padding: 0;
-
-		&::after {
+		@media #{$not-mobile} {
 			display: block;
 			position: absolute;
 			content: "";
@@ -39,8 +39,23 @@
 	padding: 0;
 	margin-top: 15px;
 
-	&::after {
-		content: none;
+
+	// @media #{$mobile-only} {
+	// 	&::after {
+	// 		bottom: -25px;
+	// 	}
+	// }
+
+	@media #{$not-mobile} {
+		grid-template-rows: 44px repeat(2, auto);
+		height: 430px;
+		margin-top: auto;
+		padding: 161px 37px 38px 37px;
+		border: 2px solid #f2f2f2;
+	}
+
+	@media #{$desktop-only} {
+		padding: 160px 38px 41px;
 	}
 
 	&::before {
@@ -52,22 +67,8 @@
 		left: 50%;
 		transform: translate(-50%);
 		background: url("../../icons/stack.svg#plus") no-repeat center;
-	}
 
-	@media #{$mobile-only} {
-		&::after {
-			bottom: -25px;
-		}
-	}
-
-	@media #{$not-mobile} {
-		grid-template-rows: 44px repeat(2, auto);
-		height: 430px;
-		margin-top: auto;
-		padding: 161px 37px 38px 37px;
-		border: 2px solid #f2f2f2;
-
-		&::before {
+		@media #{$not-mobile} {
 			width: 60px;
 			height: 60px;
 			top: 52px;
@@ -75,8 +76,8 @@
 		}
 	}
 
-	@media #{$desktop-only} {
-		padding: 160px 38px 41px;
+	&::after {
+		content: none;
 	}
 }
 

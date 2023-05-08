@@ -47,28 +47,43 @@
 		padding-top: 40px;
 		min-height: 240px;
 		max-width: 249px;
+	}
 
-		&--leaf::after {
+	&--leaf {
+		--icon: #68b738 url("../../icons/stack.svg#advantages-leaf") no-repeat center;
+	}
+
+
+	&--container {
+		--icon: #68b738 url("../../icons/stack.svg#advantages-container") no-repeat center;
+	}
+
+	&--tableware {
+		--icon: #68b738 url("../../icons/stack.svg#advantages-tableware") no-repeat center;
+	}
+
+	&--clock {
+		--icon: #68b738 url("../../icons/stack.svg#advantages-clock") no-repeat center;
+	}
+
+	&::before {
+		display: block;
+		content: "";
+		width: 60px;
+		height: 60px;
+		background: var(--icon);
+		background-size: 30px 32px;
+
+		@media #{$not-mobile} {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	&::after {
+		@media #{$not-mobile} {
 			counter-increment: section;
 			content: counter(section);
-		}
-
-		&--container::after {
-			counter-increment: section;
-			content: counter(section);
-		}
-
-		&--tableware::after {
-			counter-increment: section;
-			content: counter(section);
-		}
-
-		&--clock::after {
-			counter-increment: section;
-			content: counter(section);
-		}
-
-		&::after {
 			display: block;
 			position: absolute;
 			width: 134px;
@@ -79,39 +94,6 @@
 			font-size: 280px;
 			line-height: 280px;
 			color: #f2f2f2;
-		}
-	}
-
-	&--leaf::before {
-		background: #68b738 url("../../icons/stack.svg#advantages-leaf") no-repeat center;
-		background-size: 30px 32px;
-	}
-
-
-	&--container::before {
-		background: #68b738 url("../../icons/stack.svg#advantages-container") no-repeat center;
-		background-size: 30px 32px;
-	}
-
-	&--tableware::before {
-		background: #68b738 url("../../icons/stack.svg#advantages-tableware") no-repeat center;
-		background-size: 30px 32px;
-	}
-
-	&--clock::before {
-		background: #68b738 url("../../icons/stack.svg#advantages-clock") no-repeat center;
-		background-size: 30px 32px;
-	}
-
-	&::before {
-		display: block;
-		content: "";
-		width: 60px;
-		height: 60px;
-
-		@media #{$not-mobile} {
-			width: 80px;
-			height: 80px;
 		}
 	}
 }

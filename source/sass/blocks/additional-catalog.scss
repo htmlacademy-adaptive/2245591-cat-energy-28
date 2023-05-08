@@ -45,6 +45,18 @@
 
 	@include bg-image("background-catalog-cat");
 
+
+	@media #{$tablet-only} {
+		text-align: start;
+		padding: 71px 124px 69px 422px;
+		margin-top: -11px;
+	}
+
+	@media #{$desktop-only} {
+		text-align: center;
+		padding: 184px 43px 42px 41px;
+	}
+
 	&::before {
 		display: block;
 		position: absolute;
@@ -55,26 +67,15 @@
 		left: 50%;
 		transform: translate(-50%);
 		background: url("../../icons/stack.svg#gift") no-repeat center;
-	}
 
-	@media #{$tablet-only} {
-		text-align: start;
-		padding: 71px 124px 69px 422px;
-		margin-top: -11px;
-
-		&::before {
+		@media #{$tablet-only} {
 			width: 80px;
 			height: 82px;
 			top: 57px;
 			left: 117px;
 		}
-	}
 
-	@media #{$desktop-only} {
-		text-align: center;
-		padding: 184px 43px 42px 41px;
-
-		&::before {
+		@media #{$desktop-only} {
 			width: 80px;
 			height: 82px;
 			top: 57px;

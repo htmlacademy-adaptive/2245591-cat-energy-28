@@ -9,15 +9,18 @@
 
 	@media #{$not-mobile} {
 		padding-bottom: 101px;
+	}
 
-		&::after {
-			display: block;
-			position: absolute;
+	&::after {
+		display: block;
+		position: absolute;
+		width: 100vw;
+		height: 462px;
+		bottom: 0;
+		background: #eaeaea;
+
+		@media #{$not-mobile} {
 			content: "";
-			width: 100vw;
-			height: 462px;
-			bottom: 0;
-			background: #eaeaea;
 		}
 	}
 }

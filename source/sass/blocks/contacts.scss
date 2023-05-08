@@ -1,8 +1,14 @@
 .contacts {
 	display: grid;
+	background: #f2f2f2;
 
 	@media #{$desktop-only} {
 		grid-template-columns: auto 565px 655px auto;
+		background: #ffffff;
+	}
+
+	&--light-bg {
+		background: #ffffff;
 	}
 }
 

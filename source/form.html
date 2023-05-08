@@ -35,15 +35,13 @@
 					</li>
 					<li class="program-type__item">
 						<label class="program-type__label" for="weight-gain">
-							<input class="program-type__input visually-hidden" type="radio" name="program-type" value="weight-gain" id="weight-gain">
-							<span class="program-type__control-mark"></span>
+							<input class="program-type__input" type="radio" name="program-type" value="weight-gain" id="weight-gain">
 							<span class="program-type__label-name label-name">Набор массы</span>
 						</label>
 					</li>
 					<li class="program-type__item">
 						<label class="program-type__label" for="unknown">
-							<input class="program-type__input visually-hidden" type="radio" name="program-type" value="unknown" id="unknown">
-							<span class="program-type__control-mark"></span>
+							<input class="program-type__input" type="radio" name="program-type" value="unknown" id="unknown">
 							<span class="program-type__label-name label-name">Не знаю (Нужен ваш совет)</span>
 						</label>
 					</li>
@@ -56,13 +54,15 @@
 				<div class="owner-contacts__label-wrapper">
 					<label class="owner-contacts__label" for="email">
 						<span class="owner-contacts__label-name label-name">E-mail:</span>
-						<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
-						<input class="owner-contacts__input input input--email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+						<span class="owner-contacts__label-name label-name" aria-hidden="true">*</span>
+						<input class="owner-contacts__input input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+						<span class="owner-contacts__input-icon owner-contacts__input-icon--email"></span>
 					</label>
 					<label class="owner-contacts__label" for="phone">
 						<span class="owner-contacts__label-name label-name">Телефон:</span>
-						<span class="selection-form__label-name label-name" aria-hidden="true">*</span>
-						<input class="owner-contacts__input input input--phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+						<span class="owner-contacts__label-name label-name" aria-hidden="true">*</span>
+						<input class="owner-contacts__input input" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+						<span class="owner-contacts__input-icon owner-contacts__input-icon--phone"></span>
 					</label>
 				</div>
 			</fieldset>

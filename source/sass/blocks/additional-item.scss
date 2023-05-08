@@ -4,6 +4,34 @@
 	grid-template-rows: repeat(3, auto);
 	grid-template-columns: repeat(2, 1fr);
 
+	@media #{$tablet-only} {
+		border: 1px solid #cdcdcd;
+		grid-template-rows: repeat(2, auto);
+		grid-template-columns: 1fr 1fr 93px;
+		row-gap: 23px;
+		padding: 26px 38px 28px 38px;
+	}
+
+	@media #{$desktop-only} {
+		border-top: 1px solid #cdcdcd;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 244px 82px 244px;
+		padding: 14px 0 15px 0;
+		align-items: center;
+	}
+
+	&:not(:last-child) {
+		@media #{$tablet-only} {
+			border-bottom: none;
+		}
+	}
+
+	&:last-child {
+		@media #{$desktop-only} {
+			border-bottom: 1px solid #cdcdcd;
+		}
+	}
+
 	&::after {
 		display: block;
 		position: absolute;
@@ -13,28 +41,10 @@
 		bottom: -19px;
 		left: 0;
 		background: #cdcdcd;
-	}
 
-	@media #{$not-mobile} {
-		border: 1px solid #cdcdcd;
-
-		&::after {
+		@media #{$not-mobile} {
 			content: none;
 		}
-	}
-
-	@media #{$tablet-only} {
-		grid-template-rows: repeat(2, auto);
-		grid-template-columns: 1fr 1fr 93px;
-		row-gap: 23px;
-		padding: 26px 38px 28px 38px;
-	}
-
-	@media #{$desktop-only} {
-		grid-template-rows: 1fr;
-		grid-template-columns: 1fr 244px 82px 244px;
-		padding: 14px 0 15px 0;
-		align-items: center;
 	}
 }
 

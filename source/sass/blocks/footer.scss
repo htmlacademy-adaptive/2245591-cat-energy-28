@@ -4,7 +4,7 @@
 	padding-bottom: 40px;
 
 	@media #{$tablet-only} {
-		padding-top: 55px;
+		padding-top: 60px;
 		padding-bottom: 55px;
 	}
 
@@ -18,7 +18,7 @@
 	display: flex;
 	gap: 36px;
 	flex-direction: column;
-	justify-content: end;
+	justify-content: flex-end;
 	align-items: center;
 
 	@media #{$not-mobile} {

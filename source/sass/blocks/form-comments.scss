@@ -18,11 +18,12 @@
 	text-transform: uppercase;
 	padding: 9px 12px 9px 15px;
 	border: 1px solid #e7e7e7;
-	min-height: 150px;
+	min-height: 132px;
 
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 30px;
-		min-height: 174px;
+		min-height: 153px;
+		padding: 10px 12px 10px 19px;
 	}
 }

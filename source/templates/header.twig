@@ -17,15 +17,11 @@
 				</button>
 			</div>
 			<ul class="navigation__list">
-				<li class="navigation__item navigation__item--current">
-					<a class="navigation__link" href="index.html">Главная</a>
-				</li>
+				{% for page in pages %}
 				<li class="navigation__item">
-					<a class="navigation__link" href="catalog.html">Каталог продукции</a>
+					<a class="navigation__link {% if permalink == "index.html" %} navigation__link--light-color{% endif %}" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
 				</li>
-				<li class="navigation__item">
-					<a class="navigation__link" href="form.html">Подбор программы</a>
-				</li>
+				{% endfor %}
 			</ul>
 		</nav>
 	</div>

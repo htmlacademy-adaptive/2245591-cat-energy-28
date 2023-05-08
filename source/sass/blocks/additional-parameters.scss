@@ -1,49 +1,53 @@
 .additional-parameters__title {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 34px;
+
+	@media #{$not-mobile} {
+		margin-bottom: 57px;
+	}
 }
 
 .additional-parameters__input-wrapper {
 	display: grid;
 	grid-template-columns: auto;
-	gap: 25px;
+	gap: 13px;
 	width: 100%;
 
 	@media #{$not-mobile} {
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 57px;
-		row-gap: 34px;
+		row-gap: 32px;
 	}
 
 	@media #{$desktop-only} {
 		grid-template-columns: repeat(4, 1fr);
+		row-gap: 0;
+		column-gap: 78px;
 	}
 }
 
 .additional-parameters__input {
+	--checkbox-size: 30px;
 	appearance: none;
 	display: grid;
 	margin: 0;
 
+	@media #{$not-mobile} {
+		--checkbox-size: 40px;
+	}
+
+	&:checked {
+		--tick-icon: url("../../icons/stack.svg#checkbox") no-repeat center;
+	}
+
 	&::before {
 		content: "";
 		box-sizing: border-box;
-		width: 30px;
-		height: 30px;
+		width: var(--checkbox-size);
+		height: var(--checkbox-size);
 		border: 1px solid #cdcdcd;
-		background: #ffffff;
-	}
-
-	&:checked::before {
-		background: url("../../icons/stack.svg#checkbox") no-repeat center;
-	}
-
-	@media #{$not-mobile} {
-		&::before {
-			width: 40px;
-			height: 40px;
-		}
+		background: var(--tick-icon, none);
 	}
 }
 

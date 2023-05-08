@@ -6,11 +6,11 @@
 	padding-top: 27px;
 
 	@media #{$not-mobile} {
-		padding: 58px 36px 0 40px;
+		padding: 50px 36px 0 40px;
 	}
 
 	@media #{$desktop-only} {
-		padding-top: 71px;
+		padding-top: 56px;
 	}
 }
 
@@ -19,6 +19,7 @@
 	text-transform: uppercase;
 	color: #000000;
 	margin: 0;
+	margin-right: 10px;
 	margin-bottom: 39px;
 
 	@media #{$not-mobile} {
@@ -27,6 +28,10 @@
 		margin-bottom: 66px;
 		margin-right: 309px;
 	}
+
+	@media #{$desktop-only} {
+		margin-right: 900px;
+	}
 }
 
 .main-form__title {
@@ -34,7 +39,7 @@
 	margin-bottom: 37px;
 
 	@media #{$not-mobile} {
-		margin-bottom: 54px;
+		margin-bottom: 52px;
 	}
 
 	@media #{$desktop-only} {
