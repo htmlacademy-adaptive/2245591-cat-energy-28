@@ -164,13 +164,23 @@
 		gap: 25px;
 	}
 
+	&:hover {
+		--arrow-indent: 0;
+	}
+
+	&:active {
+		--arrow-indent: 0;
+		opacity: 0.3;
+	}
+
 	&::after {
 		display: block;
 		content: "";
 		width: 32px;
 		height: 12px;
 		margin-top: 2px;
-		background: url("../../icons/stack.svg#arrow") no-repeat -8px;
+		background: url("../../icons/stack.svg#arrow") no-repeat;
+		background-position: var(--arrow-indent, -8px);
 
 		@media #{$not-mobile} {
 			margin-top: 8px;

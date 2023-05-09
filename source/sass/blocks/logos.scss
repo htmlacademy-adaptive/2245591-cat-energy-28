@@ -8,6 +8,14 @@
 	@media #{$not-mobile} {
 		grid-template-columns: 71px 119px auto;
 	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
 }
 
 .logos__logo-text {

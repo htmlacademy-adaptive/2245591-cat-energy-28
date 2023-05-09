@@ -1,46 +1,33 @@
 <footer class="footer">
 	<div class="page__centerer">
 		<div class="footer__socials">
-			<a class="footer__logo" href="./index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-				<picture>
-					<source media="(min-width: 768px)" srcset="./img/logo.svg#type" width="142" height="26">
-					<img class="footer__logo-text logo-text" src="./img/logo.svg#type" width="128" height="24" alt="Текстовый логотип Cat Energy.">
-				</picture>
+			<a class="footer__logo" href="./index.html" {% if permalink=="index.html" %}aria-current="page" {% endif %}>
+				<svg class="footer__logo-text logo-text" width="128" height="24">
+					<use href="./img/logo.svg#type-mobile"></use>
+				</svg>
 			</a>
 			<section class="footer__social-links">
 				<h2 class="visually-hidden">Ссылки на социальные сети</h2>
 				<ul class="footer__social-list social-list">
 					<li class="social-list__social-item">
-						<a class="social-list__social-link" href="#">
+						<a class="social-list__social-link social-list__social-link--vkontakte" href="#">
 							<span class="visually-hidden">Вконтакте</span>
-							<svg width="29" height="22">
-								<use href="../../icons/stack.svg#vkontakte"></use>
-							</svg>
 						</a>
 					</li>
 					<li class="social-list__social-item">
-						<a class="social-list__social-link" href="#">
+						<a class="social-list__social-link social-list__social-link--youtube" href="#">
 							<span class="visually-hidden">Youtube</span>
-							<svg width="29" height="22">
-								<use href="../../icons/stack.svg#youtube"></use>
-							</svg>
 						</a>
 					</li>
 					<li class="social-list__social-item">
-						<a class="social-list__social-link" href="#">
+						<a class="social-list__social-link social-list__social-link--telegram" href="#">
 							<span class="visually-hidden">Telegram</span>
-							<svg width="29" height="22">
-								<use href="../../icons/stack.svg#telegram"></use>
-							</svg>
 						</a>
 					</li>
 				</ul>
 			</section>
 			<a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
 				<span class="footer__academy-name">HTML Academy</span>
-				<svg width="27" height="34">
-					<use href="../../icons/stack.svg#htmlacademy-logo"></use>
-				</svg>
 			</a>
 		</div>
 	</div>

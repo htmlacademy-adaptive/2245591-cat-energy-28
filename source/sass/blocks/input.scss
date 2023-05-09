@@ -3,15 +3,28 @@
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
-	padding-top: 13px;
-	padding-bottom: 12px;
+	padding-top: 14px;
+	padding-bottom: 13px;
 	padding-left: 20px;
-	border: 1px solid #e7e7e7;
+	border: none;
+	outline: 1px solid #e7e7e7;
 
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 30px;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+
+	&:hover {
+		outline: 1px solid #cdcdcd;
+	}
+
+	&:focus {
+		outline: 2px solid #444444;
+	}
+
+	&--error {
+		outline: 2px solid #ff8282;
 	}
 }

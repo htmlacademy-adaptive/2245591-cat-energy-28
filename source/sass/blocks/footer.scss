@@ -38,9 +38,29 @@
 	text-decoration: none;
 	width: 100%;
 
+
 	@media #{$not-mobile} {
 		width: auto;
 		gap: 28px;
+	}
+
+	&:hover {
+		color: #68b738;
+		--icon-color: #68b738;
+	}
+
+	&:active {
+		opacity: 0.3;
+		--icon-color: #68b738;
+	}
+
+	&::after {
+		display: block;
+		content: "";
+		width: 27px;
+		height: 34px;
+		mask: url("../../icons/stack.svg#htmlacademy-logo") no-repeat center;
+		background: var(--icon-color, #666666);
 	}
 }
 
@@ -58,4 +78,17 @@
 
 .footer__logo-text {
 	object-fit: cover;
+
+	@media #{$not-mobile} {
+		width: 142px;
+		height: 26px;
+	}
+
+	&:hover {
+		fill: #3e3e3e;
+	}
+
+	&:active {
+		fill: #6b6b6b;
+	}
 }

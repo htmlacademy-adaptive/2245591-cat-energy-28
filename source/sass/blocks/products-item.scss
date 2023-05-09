@@ -39,13 +39,6 @@
 	padding: 0;
 	margin-top: 15px;
 
-
-	// @media #{$mobile-only} {
-	// 	&::after {
-	// 		bottom: -25px;
-	// 	}
-	// }
-
 	@media #{$not-mobile} {
 		grid-template-rows: 44px repeat(2, auto);
 		height: 430px;
@@ -258,5 +251,14 @@
 
 	@media #{$desktop-only} {
 		padding: 10px 20px;
+	}
+
+	&:hover {
+		background: #ebebeb;
+	}
+
+	&:active {
+		background: #ebebeb;
+		color: rgb(68 68 68 / 0.3);
 	}
 }

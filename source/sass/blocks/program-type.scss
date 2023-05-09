@@ -50,16 +50,16 @@
 	display: grid;
 	margin: 0;
 
+	&:hover {
+		--border-color: #bababa;
+	}
 
-	@media #{$not-mobile} {
-		&::before {
-			width: 40px;
-			height: 40px;
-		}
+	&:disabled {
+		--border-color: #bababa;
+		opacity: 0.3;
 
-		&:checked::after {
-			width: 18px;
-			height: 18px;
+		+ .program-type__label-name {
+			opacity: 0.3;
 		}
 	}
 
@@ -68,7 +68,8 @@
 		box-sizing: border-box;
 		width: var(--radio-size);
 		height: var(--radio-size);
-		border: 1px solid #cdcdcd;
+		border: 1px solid;
+		border-color: var(--border-color, #cdcdcd);
 		background: #ffffff;
 		border-radius: 50%;
 		grid-area: 1 / 1 / 2 / 2;

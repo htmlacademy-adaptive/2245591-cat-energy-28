@@ -37,6 +37,19 @@
 		--checkbox-size: 40px;
 	}
 
+	&:hover {
+		--border-color: #bababa;
+	}
+
+	&:disabled {
+		--border-color: #bababa;
+		opacity: 0.3;
+
+		+ .additional-parameters__label-name {
+			opacity: 0.3;
+		}
+	}
+
 	&:checked {
 		--tick-icon: url("../../icons/stack.svg#checkbox") no-repeat center;
 	}
@@ -46,7 +59,8 @@
 		box-sizing: border-box;
 		width: var(--checkbox-size);
 		height: var(--checkbox-size);
-		border: 1px solid #cdcdcd;
+		border: 1px solid;
+		border-color: var(--border-color, #cdcdcd);
 		background: var(--tick-icon, none);
 	}
 }

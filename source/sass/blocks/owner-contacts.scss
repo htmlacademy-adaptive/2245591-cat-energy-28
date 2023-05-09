@@ -24,6 +24,36 @@
 	align-items: center;
 }
 
+.owner-contacts__input-icon {
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	content: "";
+	width: 20px;
+	height: 20px;
+	right: 15px;
+	top: 12px;
+	mask: var(--input-icon);
+	background: #222222;
+
+	@media #{$not-mobile} {
+		right: 16px;
+		top: 16px;
+	}
+
+	&:hover {
+		background: #68b738;
+	}
+
+	&--email {
+		--input-icon: url("../../icons/stack.svg#email") no-repeat center;
+	}
+
+	&--phone {
+		--input-icon: url("../../icons/stack.svg#phone") no-repeat center;
+	}
+}
+
 .owner-contacts__input {
 	flex-grow: 1;
 	margin-left: 10px;
@@ -34,30 +64,13 @@
 		margin-left: 20px;
 		padding-left: 20px;
 	}
-}
 
-.owner-contacts__input-icon {
-	position: absolute;
-	display: block;
-	box-sizing: border-box;
-	content: "";
-	width: 20px;
-	height: 20px;
-	right: 15px;
-	top: 12px;
-	background: var(--input-icon);
-
-	@media #{$not-mobile} {
-		right: 16px;
-		top: 16px;
+	&--error + .owner-contacts__input-icon {
+		background: #ff8282;
 	}
 
-	&--email {
-		--input-icon: url("../../icons/stack.svg#email") no-repeat center;
-	}
-
-	&--phone {
-		--input-icon: url("../../icons/stack.svg#phone") no-repeat center;
+	&:hover + .owner-contacts__input-icon {
+		background: #68b738;
 	}
 }
 
