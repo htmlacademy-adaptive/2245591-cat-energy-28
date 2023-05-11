@@ -1,9 +1,9 @@
 .compare-images {
-	--width: 50%;
+	// --width: 50%;
 
 	display: grid;
 	position: relative;
-	grid-template-columns: var(--width, 50%) auto calc(100% - var(--width, 50%));
+	grid-template-columns: calc(var(--width, 0.5) * 100%) auto calc(100% - var(--width, 0.5) * 100%);
 
 	@media #{$not-mobile} {
 		width: 560px;
@@ -26,8 +26,9 @@
 		content: "";
 		width: 4px;
 		height: 100%;
-		left: var(--width, 50%);
-		transform: translate(calc(-1 * var(--width, 50%)));
+		left: calc(var(--width, 0.5) * 100%);
+		margin-left: -2px;
+		// transform: translate(calc(-1 * var(--width, 50%)));
 		background: var(--slider-color, #666666);
 	}
 }
@@ -39,9 +40,9 @@
 	background: #ffffff;
 	border: 2px solid var(--slider-color, #666666);
 	border-radius: 20px;
-	left: var(--width, 50%);
-	transform: translate(-50%);
+	left: calc(var(--width, 0.5) * 100%);
 	top: 50%;
+	transform: translate(-50%, -50%);
 
 	&:hover {
 		--slider-color: #68b738;
