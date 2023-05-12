@@ -1,38 +1,63 @@
+// Обводка блоков
 // @import "./global/outline.scss";
+
+// Брейпоинты вьюпортов
 @import "./global/media.scss";
+
+// Миксины
 @import "./global/mixins.scss";
+
+// Подключение шрифтов
 @import "./global/fonts.scss";
+
+// Переменные
 @import "./global/variables.scss";
+
+// Глобальные стили
 @import "./global/global.scss";
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
+@import "./blocks/input.scss";
+@import "./blocks/heading.scss";
+@import "./blocks/logos.scss";
+
+// Блоки хедера
+@import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+
+// Блоки футера
+@import "./blocks/footer.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/social-list.scss";
+
+// Контакты
+@import "./blocks/contacts.scss";
+
+// Карта
+@import "./blocks/map.scss";
+
+// Блоки Главной
+@import "./blocks/advantages.scss";
+@import "./blocks/compare-images.scss";
+@import "./blocks/examples.scss";
+@import "./blocks/profits.scss";
+@import "./blocks/main-index.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/welcome.scss";
+
+// Блоки Каталога
 @import "./blocks/additional-catalog.scss";
 @import "./blocks/additional-item.scss";
 @import "./blocks/additional-list.scss";
-@import "./blocks/additional-parameters.scss";
-@import "./blocks/advantages.scss";
-@import "./blocks/button.scss";
 @import "./blocks/catalog.scss";
-@import "./blocks/compare-images.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/examples.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/form-comments.scss";
-@import "./blocks/header.scss";
-@import "./blocks/heading.scss";
-@import "./blocks/input.scss";
-@import "./blocks/label-name.scss";
-@import "./blocks/logos.scss";
-@import "./blocks/main-form.scss";
-@import "./blocks/main-index.scss";
-@import "./blocks/map.scss";
-@import "./blocks/navigation.scss";
-@import "./blocks/owner-contacts.scss";
 @import "./blocks/products-item.scss";
 @import "./blocks/products-list.scss";
-@import "./blocks/profits.scss";
+
+// Блоки формы
+@import "./blocks/additional-parameters.scss";
+@import "./blocks/form-comments.scss";
+@import "./blocks/main-form.scss";
+@import "./blocks/label-name.scss";
+@import "./blocks/owner-contacts.scss";
 @import "./blocks/program-type.scss";
-@import "./blocks/programs.scss";
 @import "./blocks/selection-form.scss";
-@import "./blocks/social-list.scss";
-@import "./blocks/socials.scss";
-@import "./blocks/welcome.scss";
