@@ -6,7 +6,7 @@
 	</div>
 	<div class="contacts__map map">
 		<h2 class="visually-hidden">Схема проезда</h2>
-		<iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e69f4e96c443d45cbe1a9d13eccc646da4c76ccd5fd76d18db368992ff36aad&amp;source=constructor" width="320" height="362"></iframe>
+		<iframe class="map__interactive" loading="lazy" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e69f4e96c443d45cbe1a9d13eccc646da4c76ccd5fd76d18db368992ff36aad&amp;source=constructor" width="320" height="362" title="Схема проезда"></iframe>
 		<noscript>{% include "picture.twig" with {name: "map-image", class: "map__static", alt: "Карта схемы проезда"} %}</noscript>
 	</div>
 </section>

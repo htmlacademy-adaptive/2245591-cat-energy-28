@@ -1,6 +1,6 @@
 .compare-images {
-	// --width: 50%;
-
+	width: 280px;
+	height: 256px;
 	display: grid;
 	position: relative;
 	grid-template-columns: calc(var(--width, 0.5) * 100%) auto calc(100% - var(--width, 0.5) * 100%);
