@@ -123,20 +123,6 @@
 	cursor: pointer;
 }
 
-.navigation--no-js {
-	.navigation__toggle {
-		display: none;
-	}
-
-	.navigation__list {
-		@media #{$mobile-only} {
-			display: grid;
-			grid-template-columns: 1fr;
-			margin-top: 17px;
-			margin-bottom: -17px;
-		}
-	}
-}
 
 .navigation--opened {
 	@media #{$mobile-only} {
@@ -159,6 +145,24 @@
 			top: 55px;
 			background: #ffffff;
 			z-index: 3;
+		}
+	}
+}
+
+.navigation--no-js {
+	.navigation__toggle-wrapper {
+		display: none;
+	}
+
+	.navigation__list {
+		position: static;
+		margin-bottom: -14px;
+		margin-top: 14px;
+		margin-left: calc(-1 * var(--content-indent));
+
+		@media #{$mobile-only} {
+			display: grid;
+			grid-template-columns: 1fr;
 		}
 	}
 }

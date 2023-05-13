@@ -148,6 +148,7 @@
 
 .programs__programs-link {
 	display: flex;
+	align-items: center;
 	gap: 15px;
 	font-family: var(--accent-font);
 	font-style: normal;
@@ -178,12 +179,7 @@
 		content: "";
 		width: 32px;
 		height: 12px;
-		margin-top: 2px;
 		background: url("../../icons/stack.svg#arrow") no-repeat;
 		background-position: var(--arrow-indent, -8px);
-
-		@media #{$not-mobile} {
-			margin-top: 8px;
-		}
 	}
 }

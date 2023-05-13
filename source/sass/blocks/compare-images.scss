@@ -3,7 +3,7 @@
 	height: 256px;
 	display: grid;
 	position: relative;
-	grid-template-columns: calc(var(--width, 0.5) * 100%) auto calc(100% - var(--width, 0.5) * 100%);
+	grid-template-columns: calc(var(--width) * 100%) auto calc(100% - var(--width) * 100%);
 
 	@media #{$not-mobile} {
 		width: 560px;
@@ -26,9 +26,8 @@
 		content: "";
 		width: 4px;
 		height: 100%;
-		left: calc(var(--width, 0.5) * 100%);
+		left: calc(var(--width) * 100%);
 		margin-left: -2px;
-		// transform: translate(calc(-1 * var(--width, 50%)));
 		background: var(--slider-color, #666666);
 	}
 }
@@ -40,7 +39,7 @@
 	background: #ffffff;
 	border: 2px solid var(--slider-color, #666666);
 	border-radius: 20px;
-	left: calc(var(--width, 0.5) * 100%);
+	left: calc(var(--width) * 100%);
 	top: 50%;
 	transform: translate(-50%, -50%);
 
