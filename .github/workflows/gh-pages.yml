@@ -35,14 +35,17 @@ jobs:
         run: corepack enable; corepack prepare pnpm@latest --activate
 
       - name: Install dependencies
-        run: pnpm i --ignore-scripts
+        run: pnpm i
 
       - name: Build project
         run: npm run build
 
+      - name: Get project data
+        run: echo "DATA_JSON=$(jq -c . < source/data.json)" >> $GITHUB_ENV
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: ./build
+          folder: '${{ fromJson(env.DATA_JSON).SERVER_ROOT }}'
           branch: gh-pages
           single-commit: true

@@ -1,12 +1,11 @@
-let navMain = document.querySelector('.navigation');
-let navToggle = document.querySelector('.navigation__toggle');
+let navMain = document.querySelector(`.navigation`)
+let navToggle = document.querySelector(`.navigation__toggle`)
 
-navToggle.addEventListener('click', function () {
-	if (navMain.classList.contains('navigation--closed')) {
-		navMain.classList.remove('navigation--closed');
-		navMain.classList.add('navigation--opened');
-	} else {
-		navMain.classList.add('navigation--closed');
-		navMain.classList.remove('navigation--opened');
-	}
-});
+navMain.classList.remove(`navigation--no-js`)
+navMain.classList.add(`navigation--closed`)
+navMain.classList.remove(`navigation--opened`)
+
+navToggle.addEventListener(`click`, () => {
+	navMain.classList.toggle(`navigation--closed`)
+	navMain.classList.toggle(`navigation--opened`)
+})

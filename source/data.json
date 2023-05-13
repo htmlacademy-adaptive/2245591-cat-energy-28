@@ -1,16 +1,17 @@
 {
+	"SERVER_ROOT": "./build/",
 	"projectName": "Cat Energy",
 	"pages": [
 		{
-			"path": "index.html",
+			"path": "./",
 			"name": "Главная"
 		},
 		{
-			"path": "catalog.html",
+			"path": "./catalog.html",
 			"name": "Каталог продукции"
 		},
 		{
-			"path": "form.html",
+			"path": "./form.html",
 			"name": "Подбор программы"
 		}
 	],

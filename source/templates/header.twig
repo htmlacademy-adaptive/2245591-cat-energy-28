@@ -1,6 +1,6 @@
 <header class="header">
 	<div class="header__centerer page__centerer">
-		<a class="header__logos logos" href="index.html">
+		<a class="header__logos logos" href="./">
 			<picture>
 				<source media="(min-width: 1440px)" srcset="./img/logo.svg#desktop">
 				<source media="(min-width: 768px)" srcset="./img/logo.svg#tablet">
@@ -11,7 +11,7 @@
 				<img class="logos__logo-text" src="./img/logo.svg#type-mobile" width="101" height="18" alt="Текстовый логотип Cat Energy.">
 			</picture>
 		</a>
-		<nav class="navigation navigation--closed">
+		<nav class="navigation navigation--no-js navigation--opened">
 			<div class="navigation__toggle-wrapper">
 				<button class="navigation__toggle" type="button">
 					<span class="visually-hidden">Открыть меню</span>
@@ -20,7 +20,7 @@
 			<ul class="navigation__list">
 				{% for page in pages %}
 				<li class="navigation__item">
-					<a class="navigation__link {% if permalink == "index.html" %} navigation__link--light-color{% endif %}" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
+					<a class="navigation__link {% if permalink == "./" %} navigation__link--light-color{% endif %}" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
 				</li>
 				{% endfor %}
 			</ul>
