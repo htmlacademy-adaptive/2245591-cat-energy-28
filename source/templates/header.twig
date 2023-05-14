@@ -20,7 +20,7 @@
 			<ul class="navigation__list">
 				{% for page in pages %}
 				<li class="navigation__item">
-					<a class="navigation__link {% if permalink == "./" %} navigation__link--light-color{% endif %}" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
+					<a class="navigation__link {% if permalink == "./" %} navigation__link--light-color{% endif %}" href="{{ page.path }}" {% if permalink == page.path %} aria-current="page" {% endif %}>{{ page.name }} </a>
 				</li>
 				{% endfor %}
 			</ul>

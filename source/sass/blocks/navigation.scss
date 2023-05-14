@@ -68,6 +68,10 @@
 	}
 
 	&--light-color {
+		@media #{$tablet-only} {
+			--line-indent: -12px;
+		}
+
 		@media #{$desktop-only} {
 			--underline-color: #ffffff;
 			color: #ffffff;
@@ -83,14 +87,10 @@
 			content: var(--has-decor, none);
 			position: absolute;
 			right: 0;
-			bottom: -12px;
+			bottom: var(--line-indent, -8px);
 			left: 0;
 			height: 2px;
 			background: var(--underline-color);
-		}
-
-		@media #{$desktop-only} {
-			bottom: -8px;
 		}
 	}
 }
