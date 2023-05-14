@@ -85,6 +85,7 @@
 
 .examples__compare-images {
 	margin: 0 auto;
+	margin-bottom: 3px;
 
 	@media #{$desktop-only} {
 		grid-row: 1 / 4;

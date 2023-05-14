@@ -22,24 +22,27 @@
 	position: relative;
 
 	&--expenses {
+		display: flex;
+		justify-content: center;
+		gap: 5px;
 		grid-column: 1 / 3;
-		text-align: center;
 
 		@media #{$tablet-only} {
 			grid-column: 3 / 4;
 			justify-self: end;
-			text-align: end;
-			max-width: 180px;
+			display: grid;
+			gap: 9px;
 		}
 
 		@media #{$desktop-only} {
-			text-align: start;
+			justify-content: start;
+
+			gap: 63px;
 		}
 	}
 }
 
 .profits__title {
-	display: block;
 	position: absolute;
 	font-size: 12px;
 	line-height: 12px;
@@ -63,17 +66,17 @@
 	}
 
 	&--expenses {
-		display: inline;
 		position: static;
 		font-family: var(--accent-font);
 		font-size: 14px;
 		line-height: 20px;
 		text-transform: uppercase;
+		min-width: auto;
 		width: auto;
+		transform: none;
 
 		@media #{$not-mobile} {
 			font-size: 20px;
-			line-height: 20px;
 		}
 
 		@media #{$desktop-only} {
@@ -90,7 +93,6 @@
 	text-transform: uppercase;
 	border: 1px solid #cdcdcd;
 	border-radius: 3px;
-	width: 100%;
 	height: 56px;
 	margin: 0;
 	padding-top: 14px;
@@ -104,18 +106,18 @@
 	}
 
 	&--expenses {
-		display: inline;
 		font-family: var(--accent-font);
 		font-size: 14px;
 		line-height: 20px;
 		text-transform: uppercase;
 		margin: 0;
 		padding: 0;
+		height: auto;
 		border: none;
 
 		@media #{$not-mobile} {
 			font-size: 20px;
-			line-height: 20px;
+			text-align: end;
 		}
 	}
 }

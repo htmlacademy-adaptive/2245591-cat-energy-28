@@ -4,12 +4,12 @@
 	padding-bottom: 40px;
 
 	@media #{$tablet-only} {
-		padding-top: 60px;
+		padding-top: 50px;
 		padding-bottom: 55px;
 	}
 
 	@media #{$desktop-only} {
-		padding-top: 66px;
+		padding-top: 58px;
 		padding-bottom: 66px;
 	}
 }
@@ -24,7 +24,16 @@
 	@media #{$not-mobile} {
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: center;
+	}
+
+	@media #{$desktop-only} {
+		align-items: end;
+	}
+}
+
+.footer__social-links {
+	@media #{$desktop-only} {
+		margin-bottom: 5px;
 	}
 }
 
@@ -37,7 +46,7 @@
 	line-height: 19px;
 	text-decoration: none;
 	width: 100%;
-
+	margin-top: 7px;
 
 	@media #{$not-mobile} {
 		width: auto;

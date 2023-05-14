@@ -83,10 +83,14 @@
 			content: var(--has-decor, none);
 			position: absolute;
 			right: 0;
-			bottom: -8px;
+			bottom: -12px;
 			left: 0;
 			height: 2px;
 			background: var(--underline-color);
+		}
+
+		@media #{$desktop-only} {
+			bottom: -8px;
 		}
 	}
 }
