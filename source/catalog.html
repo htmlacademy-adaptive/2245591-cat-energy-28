@@ -3,6 +3,17 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
+
+<!--
+
+	⚠️ Проверяющему ⚠️
+
+	🔷 Валидация и проверка БЭМ-классов включены в `npm run lint`
+
+	🔷 Webp генерируется в прод-сборке. Проверить — `npm run preview`
+
+-->
+
 <main class="catalog">
 	<div class="catalog__centerer page__centerer">
 		<h1 class="catalog__title heading heading--lvl-1">Каталог продукции</h1>
@@ -11,10 +22,10 @@
 			<ul class="catalog__products-list products-list">
 				<li class="products-list__item products-item">
 					<div class="products-item__container">
-						<div class="products-item__image-wrapper">
+						<a class="products-item__image-wrapper" href="javascript:undefined">
 							{% include "./templates/picture.twig" with {name: "products/product1", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
-						</div>
-						<p class="products-item__name">Cat Energy PRO 500 г</p>
+						</a>
+						<a class="products-item__name" href="javascript:undefined">Cat Energy PRO 500 г</a>
 						<dl class="products-item__parameters">
 							<div class="products-item__wrapper">
 								<dt class="products-item__parameter">Масса</dt>
@@ -29,15 +40,15 @@
 								<dd class="products-item__value">700 ₽</dd>
 							</div>
 						</dl>
-						<a class="products-item__button button" href="#">Заказать</a>
+						<a class="products-item__button button" href="javascript:undefined">Заказать</a>
 					</div>
 				</li>
 				<li class="products-list__item products-item">
 					<div class="products-item__container">
-						<div class="products-item__image-wrapper">
+						<a class="products-item__image-wrapper" href="javascript:undefined">
 							{% include "./templates/picture.twig" with {name: "products/product2", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
-						</div>
-						<p class="products-item__name">Cat Energy PRO 1000 г</p>
+						</a>
+						<a class="products-item__name" href="javascript:undefined">Cat Energy PRO 1000 г</a>
 						<dl class="products-item__parameters">
 							<div class="products-item__wrapper">
 								<dt class="products-item__parameter">Масса</dt>
@@ -52,15 +63,15 @@
 								<dd class="products-item__value">1000 ₽</dd>
 							</div>
 						</dl>
-						<a class="products-item__button button" href="#">Заказать</a>
+						<a class="products-item__button button" href="javascript:undefined">Заказать</a>
 					</div>
 				</li>
 				<li class="products-list__item products-item">
 					<div class="products-item__container">
-						<div class="products-item__image-wrapper">
+						<a class="products-item__image-wrapper" href="javascript:undefined">
 							{% include "./templates/picture.twig" with {name: "products/product3", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
-						</div>
-						<p class="products-item__name">Cat Energy PRO 500 г</p>
+						</a>
+						<a class="products-item__name" href="javascript:undefined">Cat Energy PRO 500 г</a>
 						<dl class="products-item__parameters">
 							<div class="products-item__wrapper">
 								<dt class="products-item__parameter">Масса</dt>
@@ -75,15 +86,15 @@
 								<dd class="products-item__value">700 ₽</dd>
 							</div>
 						</dl>
-						<a class="products-item__button button" href="#">Заказать</a>
+						<a class="products-item__button button" href="javascript:undefined">Заказать</a>
 					</div>
 				</li>
 				<li class="products-list__item products-item">
 					<div class="products-item__container">
-						<div class="products-item__image-wrapper">
+						<a class="products-item__image-wrapper" href="javascript:undefined">
 							{% include "./templates/picture.twig" with {name: "products/product4", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
-						</div>
-						<p class="products-item__name">Cat Energy PRO 1000 г</p>
+						</a>
+						<a class="products-item__name" href="javascript:undefined">Cat Energy PRO 1000 г</a>
 						<dl class="products-item__parameters">
 							<div class="products-item__wrapper">
 								<dt class="products-item__parameter">Масса</dt>
@@ -98,15 +109,15 @@
 								<dd class="products-item__value">1000 ₽</dd>
 							</div>
 						</dl>
-						<a class="products-item__button button" href="#">Заказать</a>
+						<a class="products-item__button button" href="javascript:undefined">Заказать</a>
 					</div>
 				</li>
 				<li class="products-list__item products-item">
 					<div class="products-item__container">
-						<div class="products-item__image-wrapper">
+						<a class="products-item__image-wrapper" href="javascript:undefined">
 							{% include "./templates/picture.twig" with {name: "products/product5", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
-						</div>
-						<p class="products-item__name">Cat Energy SLIM 500 г</p>
+						</a>
+						<a class="products-item__name" href="javascript:undefined">Cat Energy SLIM 500 г</a>
 						<dl class="products-item__parameters">
 							<div class="products-item__wrapper">
 								<dt class="products-item__parameter">Масса</dt>
@@ -121,15 +132,15 @@
 								<dd class="products-item__value">400 ₽</dd>
 							</div>
 						</dl>
-						<a class="products-item__button button" href="#">Заказать</a>
+						<a class="products-item__button button" href="javascript:undefined">Заказать</a>
 					</div>
 				</li>
 				<li class="products-list__item products-item">
 					<div class="products-item__container">
-						<div class="products-item__image-wrapper">
+						<a class="products-item__image-wrapper" href="javascript:undefined">
 							{% include "./templates/picture.twig" with {name: "products/product6", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
-						</div>
-						<p class="products-item__name">Cat Energy SLIM 1000 г</p>
+						</a>
+						<a class="products-item__name" href="javascript:undefined">Cat Energy SLIM 1000 г</a>
 						<dl class="products-item__parameters">
 							<div class="products-item__wrapper">
 								<dt class="products-item__parameter">Масса</dt>
@@ -144,15 +155,15 @@
 								<dd class="products-item__value">700 ₽</dd>
 							</div>
 						</dl>
-						<a class="products-item__button button" href="#">Заказать</a>
+						<a class="products-item__button button" href="javascript:undefined">Заказать</a>
 					</div>
 				</li>
 				<li class="products-list__item products-item">
 					<div class="products-item__container">
-						<div class="products-item__image-wrapper">
+						<a class="products-item__image-wrapper" href="javascript:undefined">
 							{% include "./templates/picture.twig" with {name: "products/product7", class: "products-item__image", alt: "Изображение товара (банка с кормом)."} %}
-						</div>
-						<p class="products-item__name">Cat Energy SLIM 500 г</p>
+						</a>
+						<a class="products-item__name" href="javascript:undefined">Cat Energy SLIM 500 г</a>
 						<dl class="products-item__parameters">
 							<div class="products-item__wrapper">
 								<dt class="products-item__parameter">Масса</dt>
@@ -167,13 +178,13 @@
 								<dd class="products-item__value">500 ₽</dd>
 							</div>
 						</dl>
-						<a class="products-item__button button" href="#">Заказать</a>
+						<a class="products-item__button button" href="javascript:undefined">Заказать</a>
 					</div>
 				</li>
 				<li class="products-list__item products-item products-item--show-more">
 					<span class="products-item__show-more-name">Показать еще 100500 товаров</span>
 					<span class="products-item__show-more-description">На самом деле вкусов гораздо больше!</span>
-					<a class="products-item__show-all-button button" href="#">Показать все</a>
+					<a class="products-item__show-all-button button" href="javascript:undefined">Показать все</a>
 				</li>
 			</ul>
 		</section>
@@ -186,25 +197,25 @@
 					<p class="additional-item__name">Сахарозаменитель</p>
 					<span class="additional-item__quantity">1 упаковка (100 г)</span>
 					<span class="additional-item__price">200 ₽</span>
-					<a class="additional-item__button button" href="#">Заказать</a>
+					<a class="additional-item__button button" href="javascript:undefined">Заказать</a>
 				</li>
 				<li class="additional-list__additional-item additional-item">
 					<p class="additional-item__name">Питьевая вода</p>
 					<span class="additional-item__quantity">5 литров</span>
 					<span class="additional-item__price">50 ₽</span>
-					<a class="additional-item__button button" href="#">Заказать</a>
+					<a class="additional-item__button button" href="javascript:undefined">Заказать</a>
 				</li>
 				<li class="additional-list__additional-item additional-item">
 					<p class="additional-item__name">Молоко</p>
 					<span class="additional-item__quantity">1 литр</span>
 					<span class="additional-item__price">100 ₽</span>
-					<a class="additional-item__button button" href="#">Заказать</a>
+					<a class="additional-item__button button" href="javascript:undefined">Заказать</a>
 				</li>
 				<li class="additional-list__additional-item additional-item">
 					<p class="additional-item__name">Витамины</p>
 					<span class="additional-item__quantity">1 упаковка (30 г)</span>
 					<span class="additional-item__price">300 ₽</span>
-					<a class="additional-item__button button" href="#">Заказать</a>
+					<a class="additional-item__button button" href="javascript:undefined">Заказать</a>
 				</li>
 			</ul>
 			<div class="additional-catalog__special-offer">Закажите все<br>и получите чехол для кота в подарок!</div>

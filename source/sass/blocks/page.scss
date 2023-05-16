@@ -13,19 +13,6 @@
 	grid-template-rows: min-content 1fr min-content;
 }
 
-// .page__centerer {
-// 	margin: 0 20px;
-
-// 	@media #{$not-mobile} {
-// 		margin: 0 30px;
-// 	}
-
-// 	@media #{$desktop-only} {
-// 		width: 1220px;
-// 		margin: 0 auto;
-// 	}
-// }
-
 .page__centerer {
 	--indent-min: 20;
 	--indent-max: 30;

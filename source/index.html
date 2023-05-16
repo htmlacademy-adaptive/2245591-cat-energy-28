@@ -3,6 +3,17 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
+
+<!--
+
+	⚠️ Проверяющему ⚠️
+
+	🔷 Валидация и проверка БЭМ-классов включены в `npm run lint`
+
+	🔷 Webp генерируется в прод-сборке. Проверить — `npm run preview`
+
+-->
+
 <main class="main-index">
 	<section class="main-index__welcome welcome">
 		<div class="welcome__centerer page__centerer">
@@ -11,7 +22,7 @@
 			<div class="welcome__welcome-image-wrapper">
 				{% include "./templates/picture.twig" with {name: "can-image", class: "welcome__welcome-image", alt: "Изображение банки с кормом."} %}
 			</div>
-			<a class="welcome__choose-button button" href="#">Подобрать программу</a>
+			<a class="welcome__choose-button button" href="javascript:undefined">Подобрать программу</a>
 		</div>
 	</section>
 	<section class="main-index__programs programs">

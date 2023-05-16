@@ -22,7 +22,6 @@
 
 	@media #{$desktop-only} {
 		grid-template-columns: repeat(4, 1fr);
-		row-gap: 0;
 		column-gap: 78px;
 	}
 }
@@ -73,9 +72,5 @@
 
 	@media #{$not-mobile} {
 		gap: 20px;
-	}
-
-	@media #{$desktop-only} {
-		grid-row: 2 / 3;
 	}
 }

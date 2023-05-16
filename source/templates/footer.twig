@@ -1,26 +1,26 @@
 <footer class="footer">
 	<div class="page__centerer">
 		<div class="footer__socials">
-			<a class="footer__logo" href="./" aria-label="Главная" {% if permalink=="./" %}aria-current="page" {% endif %}>
-				<svg class="footer__logo-text logo-text" width="128" height="24">
-					<use href="./img/logo.svg#type-mobile"></use>
+			<a class="footer__logo" href="./" {% if permalink=="./" %}aria-current="page"{% endif %}>
+				<svg class="footer__logo-text logo-text" width="128" height="24" role="img" aria-label="Текстовый логотип Cat Energy.">
+					<use href="./img/logo.svg#type-mobile" aria-hidden="true" />
 				</svg>
 			</a>
 			<section class="footer__social-links">
 				<h2 class="visually-hidden">Ссылки на социальные сети</h2>
 				<ul class="footer__social-list social-list">
 					<li class="social-list__social-item">
-						<a class="social-list__social-link social-list__social-link--vkontakte" href="#">
+						<a class="social-list__social-link social-list__social-link--vkontakte" href="javascript:undefined">
 							<span class="visually-hidden">Вконтакте</span>
 						</a>
 					</li>
 					<li class="social-list__social-item">
-						<a class="social-list__social-link social-list__social-link--youtube" href="#">
+						<a class="social-list__social-link social-list__social-link--youtube" href="javascript:undefined">
 							<span class="visually-hidden">Youtube</span>
 						</a>
 					</li>
 					<li class="social-list__social-item">
-						<a class="social-list__social-link social-list__social-link--telegram" href="#">
+						<a class="social-list__social-link social-list__social-link--telegram" href="javascript:undefined">
 							<span class="visually-hidden">Telegram</span>
 						</a>
 					</li>

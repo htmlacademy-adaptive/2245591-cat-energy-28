@@ -19,6 +19,7 @@
 	padding: 9px 12px 9px 15px;
 	border: 1px solid #e7e7e7;
 	min-height: 132px;
+	resize: vertical;
 
 	@media #{$not-mobile} {
 		font-size: 20px;
