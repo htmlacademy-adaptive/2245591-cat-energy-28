@@ -6,7 +6,12 @@
 	text-decoration: none;
 
 	@media #{$not-mobile} {
-		grid-template-columns: 71px 119px auto;
+		grid-template-columns: 71px 119px;
+		width: min-content;
+	}
+
+	@media #{$desktop-only} {
+		gap: 12px;
 	}
 
 	&:hover {
@@ -31,7 +36,6 @@
 	@media #{$desktop-only} {
 		width: 118px;
 		height: 22px;
-		margin-left: 12px;
 		margin-top: 3px;
 	}
 }
