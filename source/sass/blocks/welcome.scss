@@ -14,8 +14,13 @@
 					rgb(104 183 56 / 0.85),
 					rgb(104 183 56 / 0.85)
 				),
-				var(--bg-image) no-repeat;
-			background-size: cover;
+				var(--bg-image) no-repeat center / contain,
+				linear-gradient(
+					to right,
+					#504f55 50%,
+					#434248 50%
+				);
+			background-color: #3e3d42;
 		}
 	}
 
@@ -40,8 +45,8 @@
 					rgb(104 183 56 / 0.85),
 					rgb(104 183 56 / 0.85)
 				),
-				var(--bg-image) no-repeat;
-			background-size: cover;
+				var(--bg-image) no-repeat left / 1044px 696px;
+			background-color: #3e3d42;
 		}
 	}
 
